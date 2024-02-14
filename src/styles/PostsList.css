@@ -1,0 +1,21 @@
+/* PostsList.css */
+ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 8px;
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  p {
+    margin-bottom: 0;
+  }
+  

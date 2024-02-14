@@ -1,0 +1,28 @@
+/* src/components/Sidebar.css */
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  width: auto;
+  padding: 10px;
+  background-color: #333;
+  color: #fff;
+}
+
+/* Use 'a' instead of 'div' to leverage default anchor styles for navigation */
+a {
+  text-decoration: none;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+a:hover {
+  background-color: #555;
+}
+
+span {
+  margin-left: 10px;
+}

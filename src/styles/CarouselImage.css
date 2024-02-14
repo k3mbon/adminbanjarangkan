@@ -1,0 +1,39 @@
+/* CarouselImage.css */
+.image-container {
+  position: relative;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  padding: 10px; /* Increased padding for a bit more spacing */
+}
+
+.thumbnail {
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.delete-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #ff5555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 8px; /* Increased padding for a larger clickable area */
+  font-size: 12px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+
+  &:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+}

@@ -1,0 +1,12 @@
+.home-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .home-container > * {
+    margin: top;
+    padding: auto
+}
+  
+  /* Style each component as needed */
+  

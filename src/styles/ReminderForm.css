@@ -1,0 +1,36 @@
+/* ReminderForm.css */
+
+.compact-datepicker {
+    width: 150px; /* Adjust the width as needed */
+    font-size: 0.8em; /* Adjust the font size as needed */
+  }
+  
+  /* Additional styles to make the calendar smaller */
+  .react-datepicker {
+    font-size: 0.8em; /* Adjust the font size of the entire calendar */
+  }
+  
+  .react-datepicker__header {
+    padding: 0.5em; /* Adjust header padding */
+  }
+  
+  .react-datepicker__month {
+    margin: 0;
+  }
+  
+  .react-datepicker__day-names, .react-datepicker__day {
+    width: 2.5em; /* Adjust day size */
+    height: 3em; /* Adjust day size */
+    line-height: 1.5em; /* Adjust day size */
+  }
+  
+  .react-datepicker__day:hover {
+    background-color: #4e54c8;
+    color: #fff;
+  }
+  
+  .react-datepicker__day--selected {
+    background-color: #4e54c8;
+    color: #fff;
+  }
+  

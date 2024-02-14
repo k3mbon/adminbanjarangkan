@@ -1,0 +1,64 @@
+/* src/components/BlogForm.css */
+form {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  input[type="text"],
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+  }
+  
+  input[type="file"] {
+    margin-top: 5px;
+  }
+  
+  button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  .image-preview {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10px;
+  }
+  
+  .image-preview div {
+    margin-right: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .image-preview img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 5px;
+  }
+  
+  .image-preview button {
+    background-color: #e53935;
+    color: white;
+    padding: 5px;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .image-preview button:hover {
+    background-color: #c62828;
+  }
+  
