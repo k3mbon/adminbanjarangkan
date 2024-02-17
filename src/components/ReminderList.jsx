@@ -34,7 +34,8 @@ const ReminderList = () => {
             <Link to={`/document/${document.id}`}>
               <img src={document.imageUrls} alt="Thumbnail" />
               <div className="document-card-content">
-                <h3>{document.title}</h3>
+                <h3>{document.judul}</h3>
+                <p>{document.isi}</p>
               </div>
             </Link>
           </li>

@@ -7,7 +7,7 @@ import '../styles/CarouselImage.css'
 
 const CarouselImage = () => {
   const [image, setImage] = useState(null);
-  const [imageUrl, setImageUrl] = useState('');
+  const [Gambar1, setImageUrl] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
 
   const handleImageChange = (e) => {
@@ -34,7 +34,7 @@ const CarouselImage = () => {
 
       // Create a document in Firestore with image details
       const docRef = await addDoc(collection(db, 'foto_carousel'), {
-        imageUrl: downloadURL,
+        Gambar1: downloadURL,
       });
 
       console.log('Document written with ID: ', docRef.id);
@@ -70,9 +70,9 @@ const CarouselImage = () => {
   return (
     <div>
       <input type="file" onChange={handleImageChange} />
-      {imageUrl && <img src={imageUrl} alt="Preview" style={{ maxWidth: '200px' }} />}
+      {Gambar1 && <img src={Gambar1} alt="Preview" style={{ maxWidth: '200px' }} />}
       <button onClick={handleUpload}>Upload</button>
-      <button onClick={handleDelete} disabled={!imageUrl || isDeleting}>
+      <button onClick={handleDelete} disabled={!Gambar1 || isDeleting}>
         Delete
       </button>
     </div>

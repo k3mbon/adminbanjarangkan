@@ -10,19 +10,20 @@ import '../styles/ReminderForm.css';
 const storage = getStorage(); // Get the storage instance
 
 const ReminderForm = () => {
-  const [title, setTitle] = useState('');
-  const [date, setDate] = useState(new Date());
-  const [image, setImage] = useState(null);
+  const [judul, setJudul] = useState('');
+  const [tanggal, setTanggal] = useState(new Date());
+  const [isi, setIsi] = useState(new Date());
+  const [gambar, setGambar] = useState(null);
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
-    setImage(file);
+    setGambar(file);
   };
 
   const handleImageUpload = async () => {
-    if (image) {
-      const storageRef = ref(storage, `reminderImages/${image.name}`);
-      await uploadBytes(storageRef, image);
+    if (gambar) {
+      const storageRef = ref(storage, `reminderImages/${gambar.name}`);
+      await uploadBytes(storageRef, gambar);
       return getDownloadURL(storageRef);
     }
     return null;
@@ -35,16 +36,18 @@ const ReminderForm = () => {
       const imageUrls = await handleImageUpload();
 
       await addDoc(collection(db, 'agenda'), {
-        title,
-        date,
+        judul,
+        tanggal,
+        isi,
         imageUrls,
         createdAt: serverTimestamp(),
       });
 
       // Clear form fields after submission
-      setTitle('');
-      setDate(new Date());
-      setImage(null);
+      setJudul('');
+      setTanggal(new Date());
+      setIsi('');
+      setGambar(null);
 
       console.log('Agenda reminder added successfully!');
     } catch (error) {
@@ -55,22 +58,26 @@ const ReminderForm = () => {
   return (
     <form onSubmit={handleSubmit}>
       <label>
-        Title:
-        <input type="text" value={title} onChange={(e) => setTitle(e.target.value)} />
+        Judul:
+        <input type="text" value={judul} onChange={(e) => setJudul(e.target.value)} />
       </label>
       <label>
-        Date:
+        Deskripsi:
+        <input type="text" value={isi} onChange={(e) => setIsi(e.target.value)} />
+      </label>
+      <label>
+        Tanggal:
         <DatePicker
-          selected={date}
-          onChange={(newDate) => setDate(newDate)}
+          selected={tanggal}
+          onChange={(newDate) => setTanggal(newDate)}
           className="compact-datepicker"
         />
       </label>
       <label>
-        Image:
+        Gambar:
         <input type="file" onChange={handleImageChange} />
       </label>
-      <button type="submit">Add Reminder</button>
+      <button type="submit">Tambahkan Agenda</button>
     </form>
   );
 };
