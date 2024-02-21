@@ -1,9 +1,21 @@
 // CarouselImage.jsx
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { db, storage } from '../firebase';
-import { collection, addDoc, deleteDoc, doc, getDocs } from 'firebase/firestore';
-import { ref, uploadBytesResumable, getDownloadURL, deleteObject } from 'firebase/storage';
-import '../styles/CarouselImage.css'
+import {
+  collection,
+  addDoc,
+  deleteDoc,
+  doc,
+  getDocs,
+} from 'firebase/firestore';
+import {
+  ref,
+  uploadBytesResumable,
+  getDownloadURL,
+  deleteObject,
+} from 'firebase/storage';
+import '../styles/CarouselImage.css';
+import { Button, Form } from 'react-bootstrap';
 
 const CarouselImage = () => {
   const [image, setImage] = useState(null);
@@ -68,14 +80,30 @@ const CarouselImage = () => {
   };
 
   return (
-    <div>
-      <input type="file" onChange={handleImageChange} />
-      {Gambar1 && <img src={Gambar1} alt="Preview" style={{ maxWidth: '200px' }} />}
-      <button onClick={handleUpload}>Upload</button>
-      <button onClick={handleDelete} disabled={!Gambar1 || isDeleting}>
-        Delete
-      </button>
-    </div>
+    <Form className="m-5">
+      <h2>Buat Postingan Foto</h2>
+      <hr className="text-dark" />
+      <Form.Group className="my-5">
+        <Form.Control type="file" onChange={handleImageChange} />
+        {Gambar1 && (
+          <img src={Gambar1} alt="Preview" style={{ maxWidth: '200px' }} />
+        )}
+      </Form.Group>
+      <Form.Group className="my-5">
+        <Button variant="primary" onClick={handleUpload}>
+          Upload
+        </Button>
+      </Form.Group>
+      <Form.Group className="my-5">
+        <Button
+          variant="success"
+          onClick={handleDelete}
+          disabled={!Gambar1 || isDeleting}
+        >
+          Delete
+        </Button>
+      </Form.Group>
+    </Form>
   );
 };
 

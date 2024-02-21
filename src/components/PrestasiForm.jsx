@@ -1,7 +1,8 @@
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { db, storage } from '../firebase';
 import { collection, addDoc, getDocs } from 'firebase/firestore';
 import { ref, uploadBytesResumable, getDownloadURL } from 'firebase/storage';
+import { Form } from 'react-bootstrap';
 
 const PrestasiForm = () => {
   const [image, setImage] = useState(null);
@@ -49,7 +50,8 @@ const PrestasiForm = () => {
       uploadTask.on(
         'state_changed',
         (snapshot) => {
-          const progress = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+          const progress =
+            (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
           console.log('Upload is ' + progress + '% done');
         },
         (error) => {
@@ -83,22 +85,38 @@ const PrestasiForm = () => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
-        <input type="file" onChange={handleImageChange} />
-        {imagePreview && <img src={imagePreview} alt="Preview" style={{ maxWidth: '200px' }} />}
-        <input
-          type="text"
-          placeholder="Title"
-          value={title}
-          onChange={(e) => setTitle(e.target.value)}
-        />
-        <textarea
-          placeholder="Description"
-          value={description}
-          onChange={(e) => setDescription(e.target.value)}
-        ></textarea>
+      <Form className="mx-5" onSubmit={handleSubmit}>
+        <h2>Buat Postingan Prestasi</h2>
+        <hr className="text-dark" />
+        <Form.Group className="my-5">
+          {' '}
+          <Form.Control
+            type="text"
+            placeholder="Title"
+            value={title}
+            onChange={(e) => setTitle(e.target.value)}
+          />
+        </Form.Group>
+        <Form.Group className="my-5">
+          <textarea
+            placeholder="Description"
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+          ></textarea>
+        </Form.Group>
+        <Form.Group className="my-5">
+          <Form.Control type="file" onChange={handleImageChange} />
+          {imagePreview && (
+            <img
+              src={imagePreview}
+              alt="Preview"
+              style={{ maxWidth: '200px' }}
+            />
+          )}
+        </Form.Group>
+
         <button type="submit">Upload</button>
-      </form>
+      </Form>
     </div>
   );
 };

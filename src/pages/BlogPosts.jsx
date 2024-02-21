@@ -1,12 +1,11 @@
-import React from 'react'
-import BlogForm from '../components/BlogForm'
+import BlogForm from '../components/BlogForm';
 
 const BlogPosts = () => {
   return (
     <div>
-        <BlogForm/>
+      <BlogForm />
     </div>
-  )
-}
+  );
+};
 
-export default BlogPosts
+export default BlogPosts;

@@ -1,5 +1,5 @@
 // ListAlbumFoto.jsx
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { db } from '../firebase';
 import { collection, getDocs } from 'firebase/firestore';
 import { Link } from 'react-router-dom'; // Import Link from react-router-dom for navigation
@@ -29,7 +29,11 @@ const ListAlbumFoto = () => {
       <h2>Daftar Album</h2>
       <div className="album-list">
         {albums.map((album) => (
-          <Link to={`/albums/${album.id}`} key={album.id} className="album-card">
+          <Link
+            to={`/albums/${album.id}`}
+            key={album.id}
+            className="album-card"
+          >
             <h3>{album.albumName}</h3>
             {album.imageUrls && album.imageUrls.length > 0 && (
               <div>

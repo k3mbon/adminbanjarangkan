@@ -1,5 +1,5 @@
 // PostsList.jsx
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 import '../styles/PostsList.css';
@@ -25,7 +25,7 @@ const PostsList = () => {
   }, []);
 
   return (
-    <div>
+    <div className="mx-5">
       <h2>Posts List</h2>
       <ul>
         {posts.map((post) => (
@@ -35,7 +35,11 @@ const PostsList = () => {
             {post.gambarUrls && (
               <div>
                 {post.gambarUrls.map((imageUrl, index) => (
-                  <img key={index} src={imageUrl} alt={`Post Image ${index + 1}`} />
+                  <img
+                    key={index}
+                    src={imageUrl}
+                    alt={`Post Image ${index + 1}`}
+                  />
                 ))}
               </div>
             )}

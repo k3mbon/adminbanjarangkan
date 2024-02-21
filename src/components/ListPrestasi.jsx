@@ -1,5 +1,5 @@
 // ListPrestasi.jsx
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { db } from '../firebase';
 import { collection, getDocs } from 'firebase/firestore';
 import '../styles/ListPrestasi.css'; // Import the CSS file for styling
@@ -27,15 +27,21 @@ const ListPrestasi = () => {
   }, []); // Fetch data on component mount
 
   return (
-    <div className="prestasi-list-container">
+    <div className="document-list-container my-5">
       <h2>List of Prestasi</h2>
-      {prestasiList.map((prestasi) => (
-        <div key={prestasi.id} className="prestasi-card">
-          <h3>{prestasi.title}</h3>
-          <p>{prestasi.description}</p>
-          <img src={prestasi.imageUrl} alt={prestasi.title} className="card-image" />
-        </div>
-      ))}
+      <div className="d-flex">
+        {prestasiList.map((prestasi) => (
+          <div key={prestasi.id} className="document-card">
+            <img
+              src={prestasi.imageUrl}
+              alt={prestasi.title}
+              className="card-image"
+            />
+            <h3>{prestasi.title}</h3>
+            <p>{prestasi.description}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

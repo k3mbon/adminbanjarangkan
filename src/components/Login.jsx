@@ -1,5 +1,5 @@
 // src/components/Login.js
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { signInWithEmailAndPassword } from 'firebase/auth';
 
 import { auth } from '../firebase';
@@ -23,22 +23,64 @@ const Login = () => {
     }
   };
 
-  
-
   return (
     <div>
-      <h2>Login</h2>
+      <div className="Auth-form-container">
+        <form className="Auth-form">
+          <div className="Auth-form-content">
+            <h3 className="Auth-form-title">Sign In</h3>
+            <div className="form-group mt-3">
+              <label>Email address</label>
+              <input
+                type="email"
+                className="form-control mt-1"
+                placeholder="Enter email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+            </div>
+            <div className="form-group mt-3">
+              <label>Password</label>
+              <input
+                type="password"
+                className="form-control mt-1"
+                placeholder="Enter password"
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+            </div>
+            <div className="d-grid gap-2 mt-3">
+              <button
+                type="submit"
+                className="btn btn-primary"
+                onClick={handleLogin}
+              >
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      {/* <h2>Login</h2>
       <form onSubmit={handleLogin}>
         <label>
           Email:
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} />
+          <input
+            type="email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
         </label>
         <label>
           Password:
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} />
+          <input
+            type="password"
+            value={password}
+            onChange={(e) => setPassword(e.target.value)}
+          />
         </label>
         <button type="submit">Login</button>
-      </form>
+      </form> */}
     </div>
   );
 };

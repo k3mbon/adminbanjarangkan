@@ -1,16 +1,25 @@
-import React from 'react'
-import ReminderForm from '../components/ReminderForm'
-import Sidebar from '../components/Sidebar'
-import ReminderList from '../components/ReminderList'
+import ReminderForm from '../components/ReminderForm';
+import Sidebar from '../components/Sidebar';
+import ReminderList from '../components/ReminderList';
+import { Col, Container, Row } from 'react-bootstrap';
 
 const Agenda = () => {
   return (
-    <div>
-        <Sidebar/>
-        <ReminderForm/>
-        <ReminderList/>
-    </div>
-  )
-}
+    <>
+      {' '}
+      <Container fluid className="bg-light min-vh-100">
+        <Row>
+          <Col md="3" className="bg-white min-vh-100">
+            <Sidebar />
+          </Col>
+          <Col className="py-5" md="9">
+            <ReminderForm />
+            <ReminderList />
+          </Col>
+        </Row>
+      </Container>
+    </>
+  );
+};
 
-export default Agenda
+export default Agenda;

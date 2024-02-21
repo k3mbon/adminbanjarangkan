@@ -1,6 +1,6 @@
 // AgendaList.jsx
 import { Link } from 'react-router-dom';
-import React, { useState, useEffect } from 'react';
+import { useState, useEffect } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
 import { db } from '../firebase';
 import '../styles/ReminderList.css';
@@ -31,7 +31,10 @@ const ReminderList = () => {
       <ul className="document-list">
         {documents.map((document) => (
           <li key={document.id} className="document-card">
-            <Link to={`/document/${document.id}`}>
+            <Link
+              className="text-decoration-none"
+              to={`/document/${document.id}`}
+            >
               <img src={document.imageUrls} alt="Thumbnail" />
               <div className="document-card-content">
                 <h3>{document.judul}</h3>
