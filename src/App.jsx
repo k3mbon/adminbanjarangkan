@@ -22,8 +22,8 @@ function App() {
             <Route path="/galeri" element={<Galeri />} />
             <Route path="/prestasi" element={<Prestasi />} />
             <Route path="/carousel" element={<Carousel />} />
-            <Route path="/artikel" exact component={DocumentList} />
-            <Route path="/document/:id" component={DocumentDetails} />{' '}
+            <Route path="/artikel" exact element={<DocumentList />} />
+            <Route path="/document/:id" element={<DocumentDetails/>} />{' '}
             {/* Add this route */}
             {/* Add more routes or components as needed */}
           </Routes>

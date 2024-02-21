@@ -2,45 +2,24 @@
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
-import { getStorage, ref, uploadBytes, getDownloadURL } from 'firebase/storage';
 import { db } from '../firebase';
 import '../styles/ReminderForm.css';
 import { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 
-const storage = getStorage(); // Get the storage instance
-
 const ReminderForm = () => {
   const [judul, setJudul] = useState('');
   const [tanggal, setTanggal] = useState(new Date());
-  const [isi, setIsi] = useState(new Date());
-  const [gambar, setGambar] = useState(null);
-
-  const handleImageChange = (e) => {
-    const file = e.target.files[0];
-    setGambar(file);
-  };
-
-  const handleImageUpload = async () => {
-    if (gambar) {
-      const storageRef = ref(storage, `reminderImages/${gambar.name}`);
-      await uploadBytes(storageRef, gambar);
-      return getDownloadURL(storageRef);
-    }
-    return null;
-  };
+  const [isi, setIsi] = useState('');
 
   const handleSubmit = async (e) => {
     e.preventDefault();
 
     try {
-      const imageUrls = await handleImageUpload();
-
       await addDoc(collection(db, 'agenda'), {
         judul,
         tanggal,
         isi,
-        imageUrls,
         createdAt: serverTimestamp(),
       });
 
@@ -48,7 +27,6 @@ const ReminderForm = () => {
       setJudul('');
       setTanggal(new Date());
       setIsi('');
-      setGambar(null);
 
       console.log('Agenda reminder added successfully!');
     } catch (error) {
@@ -85,11 +63,6 @@ const ReminderForm = () => {
             onChange={(newDate) => setTanggal(newDate)}
             className="compact-datepicker"
           />
-        </Form.Group>
-        <Form.Group className="my-5">
-          {' '}
-          <Form.Label>Gambar:</Form.Label>
-          <Form.Control type="file" onChange={handleImageChange} />
         </Form.Group>
 
         <Button type="submit" onChange={handleSubmit}>

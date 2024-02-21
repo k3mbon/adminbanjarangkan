@@ -31,16 +31,10 @@ const ReminderList = () => {
       <ul className="document-list">
         {documents.map((document) => (
           <li key={document.id} className="document-card">
-            <Link
-              className="text-decoration-none"
-              to={`/document/${document.id}`}
-            >
-              <img src={document.imageUrls} alt="Thumbnail" />
               <div className="document-card-content">
                 <h3>{document.judul}</h3>
                 <p>{document.isi}</p>
               </div>
-            </Link>
           </li>
         ))}
       </ul>

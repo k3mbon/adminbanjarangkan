@@ -1,5 +1,5 @@
-// src/components/BlogForm.jsx
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
+import { collection, addDoc, doc, setDoc } from 'firebase/firestore';
+import { serverTimestamp } from 'firebase/database';
 import { storage } from '../firebase';
 import {
   ref,
@@ -7,18 +7,29 @@ import {
   deleteObject,
   getDownloadURL,
 } from 'firebase/storage';
-import { db } from '../firebase';
+import { db, auth } from '../firebase';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css'; // Import the styles
-import '../styles/BlogForm.css';
 import { Button, Form } from 'react-bootstrap';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import DOMPurify from 'dompurify';
 
-const BlogForm = () => {
+const BlogForm = ({ dataToEdit, onFormSubmit }) => {
   const [judul, setJudul] = useState('');
   const [isi, setIsi] = useState('');
   const [gambar, setGambar] = useState([]);
   const [gambarUrls, setGambarUrls] = useState([]);
+  const user = auth.currentUser;
+  const sanitizedHTML = DOMPurify.sanitize(isi);
+
+  useEffect(() => {
+    if (dataToEdit) {
+      // If dataToEdit is provided, set form fields with the data for editing
+      setJudul(dataToEdit.judul || '');
+      setIsi(dataToEdit.isi || '');
+      setGambarUrls(dataToEdit.gambarUrls || []);
+    }
+  }, [dataToEdit]);
 
   const handleGambarChange = (e) => {
     const files = Array.from(e.target.files);
@@ -52,24 +63,46 @@ const BlogForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (user) {
+      try {
+        await handleUpload();
 
-    try {
-      await handleUpload();
+        if (dataToEdit) {
+          // If editing existing document, update the document
+          const documentRef = doc(db, 'poststunda', dataToEdit.id);
+          await setDoc(documentRef, {
+            judul,
+            isi,
+            gambarUrls,
+          });
+          console.log('Blog post updated successfully!');
+        } else {
+          // If creating a new document, add the document to Firestore
+          await addDoc(collection(db, 'poststunda'), {
+            judul,
+            isi,
+            gambarUrls,
+            createdAt: serverTimestamp(),
+          });
+          console.log('Blog post created successfully!');
+        }
 
-      const postRef = await addDoc(collection(db, 'poststunda'), {
-        judul,
-        isi,
-        gambarUrls,
-        createdAt: serverTimestamp(),
-      });
-
-      setJudul('');
-      setGambar([]);
-      setIsi([]);
-      setGambarUrls([]);
-      console.log('Blog post created successfully!');
-    } catch (error) {
-      console.error('Error creating blog post:', error);
+        // Reset form fields after submission
+        setJudul('');
+        setIsi('');
+        setGambar([]);
+        setGambarUrls([]);
+        
+        // Callback to notify parent component about form submission
+        if (onFormSubmit) {
+          onFormSubmit();
+        }
+      } catch (error) {
+        console.error('Error creating/updating blog post:', error);
+      }
+    } else {
+      console.log('User is not authenticated. Redirecting to login page...');
+      // Implement authentication or redirection logic here
     }
   };
 
@@ -98,8 +131,8 @@ const BlogForm = () => {
 
   return (
     <>
-      <Form className="mx-5">
-        <h2>Buat Postingan Artikel</h2>
+      <Form className="mx-5" onSubmit={handleSubmit}>
+        <h2>{dataToEdit ? 'Edit' : 'Buat'} Postingan Artikel</h2>
         <hr className="text-dark" />
         <Form.Group className="my-5">
           <Form.Label>Judul Artikel</Form.Label>
@@ -114,7 +147,7 @@ const BlogForm = () => {
         <Form.Group className="my-5">
           <Form.Label>Isi Artikel</Form.Label>
           <ReactQuill
-            value={isi}
+            value={sanitizedHTML}
             onChange={(value) => setIsi(value)}
             placeholder="Type your blog content here..."
             modules={quillModules}
@@ -122,7 +155,7 @@ const BlogForm = () => {
           />
         </Form.Group>
         <Form.Group className="my-5" controlId="formGridAddress1">
-          <Form.Label>Foto Artikel</Form.Label>
+          <Form.Label>Foto Thumbnail Artikel</Form.Label>
           <Form.Control type="file" multiple onChange={handleGambarChange} />
           <Button
             className="mt-1"
@@ -152,9 +185,8 @@ const BlogForm = () => {
           className="my-5"
           variant="primary"
           type="submit"
-          onChange={handleSubmit}
         >
-          Submit
+          {dataToEdit ? 'Update' : 'Submit'}
         </Button>
       </Form>{' '}
     </>

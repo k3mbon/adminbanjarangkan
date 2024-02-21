@@ -7,14 +7,29 @@ import {
   FaTrophy,
   FaPhotoVideo,
 } from 'react-icons/fa';
-import { auth } from '../firebase';
 import { signOut } from 'firebase/auth';
+import { auth } from '../firebase';
 import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';  // Import useEffect and useState
+import { onAuthStateChanged } from 'firebase/auth';  // Import onAuthStateChanged
 import Logo from '../assets/logo.png';
 import { Col, Row } from 'react-bootstrap';
+// ... (imports)
 
 const Sidebar = () => {
   const navigate = useNavigate();
+  const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    // Listen for changes in authentication state
+    const unsubscribe = onAuthStateChanged(auth, (user) => {
+      setUser(user);
+    });
+
+    // Clean up the subscription when the component unmounts
+    return () => unsubscribe();
+  }, []); // Ensure this effect runs only once during component mount
+
 
   const handleLogout = async () => {
     try {
@@ -31,7 +46,7 @@ const Sidebar = () => {
       <div>
         <Row className="sidebar p-2">
           <Col>
-            <img src={Logo} />
+            <img src={Logo} alt="Logo" />
           </Col>
         </Row>
         <Row className="sidebar p-2">
@@ -55,7 +70,7 @@ const Sidebar = () => {
             <FaNewspaper className="fs-5 me-2" />
             <span className="fs-5">Postingan Terbit</span>
           </Link>
-          <Link className="list-group-item py-2 mt-2" to="/posts">
+          <Link className="list-group-item py-2 mt-2" to="/galeri">
             <FaImages className="fs-5 me-2" />
             <span className="fs-5">Galeri</span>
           </Link>
@@ -67,6 +82,11 @@ const Sidebar = () => {
             <FaPhotoVideo className="fs-5 me-2" />
             <span className="fs-5">Foto Carousel</span>
           </Link>
+          {/* Display user email if available */}
+          <h2>Admin Saat Ini</h2>
+          {user && user.email && (
+            <p className="mt-2 fs-5">{user.email}</p>
+          )}
           <button className="mt-5" onClick={handleLogout}>
             Logout
           </button>
