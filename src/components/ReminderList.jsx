@@ -1,4 +1,3 @@
-// AgendaList.jsx
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { collection, getDocs } from 'firebase/firestore';
