@@ -3,7 +3,6 @@ import Sidebar from '../components/Sidebar'
 import GalleryForm from '../components/GalleryForm'
 import ListAlbumFoto from '../components/ListAlbumFoto'
 import { Col, Container, Row } from 'react-bootstrap';
-import '../styles/Galeri.css'
 
 const Galeri = () => {
   return (
