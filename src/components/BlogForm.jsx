@@ -1,5 +1,4 @@
-import { collection, addDoc, doc, setDoc } from 'firebase/firestore';
-import { serverTimestamp } from 'firebase/database';
+import { collection, addDoc, doc, setDoc, serverTimestamp } from 'firebase/firestore';
 import { storage } from '../firebase';
 import {
   ref,
@@ -17,50 +16,41 @@ import DOMPurify from 'dompurify';
 const BlogForm = ({ dataToEdit, onFormSubmit }) => {
   const [judul, setJudul] = useState('');
   const [isi, setIsi] = useState('');
-  const [gambar, setGambar] = useState([]);
-  const [gambarUrls, setGambarUrls] = useState([]);
+  const [gambar, setGambar] = useState(null);
+  const [gambarThumbnail, setGambarThumbnail] = useState('');
   const user = auth.currentUser;
   const sanitizedHTML = DOMPurify.sanitize(isi);
 
   useEffect(() => {
     if (dataToEdit) {
-      // If dataToEdit is provided, set form fields with the data for editing
       setJudul(dataToEdit.judul || '');
       setIsi(dataToEdit.isi || '');
-      setGambarUrls(dataToEdit.gambarUrls || []);
+      setGambarThumbnail(dataToEdit.gambarThumbnail || '');
     }
   }, [dataToEdit]);
 
-  const handleGambarChange = (e) => {
-    const files = Array.from(e.target.files);
-    setGambar((prevGambar) => [...prevGambar, ...files]);
-  };
-
+  
   const handleUpload = async () => {
-    const urls = await Promise.all(
-      gambar.map(async (image) => {
-        const storageRef = ref(storage, `postImages/${image.name}`);
-        await uploadBytes(storageRef, image);
-        return getDownloadURL(storageRef);
-      })
-    );
-    setGambarUrls(urls);
+    if (!gambar) return;
+
+    // Delete previous image if exists
+    if (gambarThumbnail) {
+      const imageRef = ref(storage, `postImages/${gambarThumbnail}`);
+      await deleteObject(imageRef);
+    }
+
+    const storageRef = ref(storage, `postImages/${gambar.name}`);
+    try {
+      await uploadBytes(storageRef, gambar);
+      const url = await getDownloadURL(storageRef);
+      setGambarThumbnail(url); // Store download URL in state
+      console.log('Image uploaded successfully:', url);
+    } catch (error) {
+      console.error('Error uploading image:', error);
+    }
   };
-
-  const handleDeleteGambar = (index) => {
-    const imageRef = ref(storage, `postImages/${gambar[index].name}`);
-    deleteObject(imageRef);
-
-    setGambarUrls((prevUrls) => [
-      ...prevUrls.slice(0, index),
-      ...prevUrls.slice(index + 1),
-    ]);
-    setGambar((prevGambar) => [
-      ...prevGambar.slice(0, index),
-      ...prevGambar.slice(index + 1),
-    ]);
-  };
-
+  
+  
   const handleSubmit = async (e) => {
     e.preventDefault();
     if (user) {
@@ -68,32 +58,28 @@ const BlogForm = ({ dataToEdit, onFormSubmit }) => {
         await handleUpload();
 
         if (dataToEdit) {
-          // If editing existing document, update the document
           const documentRef = doc(db, 'poststunda', dataToEdit.id);
           await setDoc(documentRef, {
             judul,
             isi,
-            gambarUrls,
+            gambarThumbnail, // Store image URL in Firestore
           });
           console.log('Blog post updated successfully!');
         } else {
-          // If creating a new document, add the document to Firestore
           await addDoc(collection(db, 'poststunda'), {
             judul,
             isi,
-            gambarUrls,
-            createdAt: serverTimestamp(),
+            gambarThumbnail, // Store image URL in Firestore
+            createdAt: serverTimestamp(), // Add timestamp automatically
           });
           console.log('Blog post created successfully!');
         }
 
-        // Reset form fields after submission
         setJudul('');
         setIsi('');
-        setGambar([]);
-        setGambarUrls([]);
+        setGambar(null);
+        setGambarThumbnail('');
         
-        // Callback to notify parent component about form submission
         if (onFormSubmit) {
           onFormSubmit();
         }
@@ -102,7 +88,6 @@ const BlogForm = ({ dataToEdit, onFormSubmit }) => {
       }
     } else {
       console.log('User is not authenticated. Redirecting to login page...');
-      // Implement authentication or redirection logic here
     }
   };
 
@@ -154,41 +139,10 @@ const BlogForm = ({ dataToEdit, onFormSubmit }) => {
             formats={quillFormats}
           />
         </Form.Group>
-        <Form.Group className="my-5" controlId="formGridAddress1">
-          <Form.Label>Foto Thumbnail Artikel</Form.Label>
-          <Form.Control type="file" multiple onChange={handleGambarChange} />
-          <Button
-            className="mt-1"
-            type="button"
-            onClick={handleUpload}
-            variant="primary"
-          >
-            Upload Foto
-          </Button>
-        </Form.Group>
-        {gambar.length > 0 && (
-          <div className="image-preview mx-5">
-            {gambar.map((image, index) => (
-              <div key={index}>
-                <img
-                  src={URL.createObjectURL(image)}
-                  alt={`Gambar ${index + 1}`}
-                />
-                <Button type="button" onClick={() => handleDeleteGambar(index)}>
-                  Hapus
-                </Button>
-              </div>
-            ))}
-          </div>
-        )}
-        <Button
-          className="my-5"
-          variant="primary"
-          type="submit"
-        >
+        <Button className="my-5" variant="primary" type="submit">
           {dataToEdit ? 'Update' : 'Submit'}
         </Button>
-      </Form>{' '}
+      </Form>
     </>
   );
 };
