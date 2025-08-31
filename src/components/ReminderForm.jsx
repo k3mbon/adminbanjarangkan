@@ -1,75 +1,124 @@
 // ReminderForm.jsx
+import React, { useState } from 'react';
 import DatePicker from 'react-datepicker';
 import 'react-datepicker/dist/react-datepicker.css';
-import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
-import { db } from '../firebase';
+import { CalendarIcon, MapPinIcon } from '@heroicons/react/24/outline';
+import { sanityHelpers } from '../sanity';
 import '../styles/ReminderForm.css';
-import { useState } from 'react';
-import { Button, Form } from 'react-bootstrap';
 
 const ReminderForm = () => {
   const [judul, setJudul] = useState('');
   const [tanggal, setTanggal] = useState(new Date());
   const [isi, setIsi] = useState('');
+  const [lokasi, setLokasi] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     try {
-      await addDoc(collection(db, 'agenda'), {
+      await sanityHelpers.create({
+        _type: 'agenda',
         judul,
-        tanggal,
+        tanggal: tanggal.toISOString(),
         isi,
-        createdAt: serverTimestamp(),
+        lokasi,
+        createdAt: new Date().toISOString(),
       });
 
       // Clear form fields after submission
       setJudul('');
       setTanggal(new Date());
       setIsi('');
+      setLokasi('');
 
-      console.log('Agenda reminder added successfully!');
+      console.log('Pengingat agenda berhasil ditambahkan!');
+      // You could add a toast notification here
     } catch (error) {
-      console.error('Error adding agenda reminder:', error);
+      console.error('Error menambahkan pengingat agenda:', error);
+      // You could add error handling/notification here
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
   return (
-    <>
-      <Form onSubmit={handleSubmit} className="mx-5">
-        <h2>Buat Agenda</h2>
-        <hr className="text-dark" />
-        <Form.Group>
-          <Form.Label>Judul:</Form.Label>
-          <Form.Control
+    <div className="agenda-form">
+      <div className="form-header">
+        <h2>Buat Acara Baru</h2>
+        <p>Tambahkan item agenda atau pengingat baru</p>
+      </div>
+      
+      <form onSubmit={handleSubmit} className="agenda-form-content">
+        <div className="form-group">
+          <label className="form-label">Judul Acara</label>
+          <input
             type="text"
+            className="form-input"
             value={judul}
             onChange={(e) => setJudul(e.target.value)}
+            placeholder="Masukkan judul acara"
+            required
           />
-        </Form.Group>
-        <Form.Group className="my-5">
-          {' '}
-          <Form.Label>Deskripsi:</Form.Label>{' '}
-          <Form.Control
-            type="text"
+        </div>
+        
+        <div className="form-group">
+          <label className="form-label">Deskripsi</label>
+          <textarea
+            className="form-textarea"
             value={isi}
             onChange={(e) => setIsi(e.target.value)}
+            placeholder="Masukkan deskripsi acara"
+            rows={4}
           />
-        </Form.Group>
-        <Form.Group className="my-5">
-          <Form.Label>Tanggal:</Form.Label>{' '}
-          <DatePicker
-            selected={tanggal}
-            onChange={(newDate) => setTanggal(newDate)}
-            className="compact-datepicker"
+        </div>
+        
+        <div className="form-group">
+          <label className="form-label">
+            <MapPinIcon className="w-5 h-5 inline mr-2" />
+            Lokasi
+          </label>
+          <input
+            type="text"
+            className="form-input"
+            value={lokasi}
+            onChange={(e) => setLokasi(e.target.value)}
+            placeholder="Masukkan lokasi acara"
           />
-        </Form.Group>
+        </div>
+        
+        <div className="form-group">
+          <label className="form-label">
+            <CalendarIcon className="w-5 h-5 inline mr-2" />
+            Tanggal & Waktu Acara
+          </label>
+          <div className="date-picker-container">
+            <DatePicker
+              selected={tanggal}
+              onChange={(newDate) => setTanggal(newDate)}
+              showTimeSelect
+              timeFormat="HH:mm"
+              timeIntervals={15}
+              dateFormat="MMMM d, yyyy h:mm aa"
+              className="form-input date-picker-input"
+              placeholderText="Pilih tanggal dan waktu"
+              minDate={new Date()}
+            />
+          </div>
+        </div>
 
-        <Button type="submit" onChange={handleSubmit}>
-          Tambahkan Agenda
-        </Button>
-      </Form>
-    </>
+        <div className="form-actions">
+          <button 
+            type="submit" 
+            className="btn btn-primary"
+            disabled={isSubmitting || !judul.trim()}
+          >
+            {isSubmitting ? 'Menambahkan...' : 'Tambah Acara'}
+          </button>
+        </div>
+      </form>
+    </div>
   );
 };
 

@@ -1,39 +1,252 @@
 /* CarouselImage.css */
+.carousel-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-6);
+}
+
+.carousel-header {
+  text-align: center;
+  margin-bottom: var(--space-8);
+}
+
+.carousel-title {
+  font-size: var(--text-3xl);
+  font-weight: var(--font-bold);
+  color: var(--text-primary);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.carousel-subtitle {
+  font-size: var(--text-lg);
+  color: var(--text-secondary);
+  margin: 0;
+}
+
+.image-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--space-6);
+  margin-bottom: var(--space-8);
+}
+
 .image-container {
   position: relative;
-  margin-bottom: 20px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
-  padding: 10px; /* Increased padding for a bit more spacing */
+  background: var(--bg-card);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  overflow: hidden;
+  transition: all 0.3s ease;
+  /* Remove invalid group property */
+}
+
+.image-container:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px);
+  border-color: var(--primary-200);
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/10;
+  overflow: hidden;
 }
 
 .thumbnail {
   width: 100%;
-  max-width: 200px;
-  height: auto;
-  border: 1px solid #ddd;
-  border-radius: 5px;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover .thumbnail {
+  transform: scale(1.05);
+}
+
+.image-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, transparent 50%, rgba(0, 0, 0, 0.3) 100%);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.image-container:hover .image-overlay {
+  opacity: 1;
+}
+
+.image-info {
+  padding: var(--space-4);
+  background: var(--bg-secondary);
+}
+
+.image-title {
+  font-size: var(--text-base);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  margin: 0 0 var(--space-1) 0;
+  line-height: 1.4;
+}
+
+.image-meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: var(--text-sm);
+  color: var(--text-secondary);
+}
+
+.image-size {
+  font-weight: var(--font-medium);
+}
+
+.image-date {
+  opacity: 0.8;
 }
 
 .delete-button {
   position: absolute;
-  top: 10px;
-  right: 10px;
-  background-color: #ff5555;
-  color: #fff;
+  top: var(--space-3);
+  right: var(--space-3);
+  background: var(--error-600);
+  color: var(--text-inverse);
   border: none;
-  border-radius: 5px;
+  border-radius: var(--radius-full);
+  width: 2.5rem;
+  height: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
-  padding: 8px; /* Increased padding for a larger clickable area */
-  font-size: 12px;
-  opacity: 0.8;
-  transition: opacity 0.3s ease;
+  font-size: var(--text-sm);
+  font-weight: var(--font-bold);
+  opacity: 0;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
+  box-shadow: var(--shadow-md);
+}
 
-  &:hover {
-    opacity: 1;
+.image-container:hover .delete-button {
+  opacity: 1;
+}
+
+.delete-button:hover {
+  background: var(--error-700);
+  transform: scale(1.1);
+}
+
+.delete-button:disabled {
+  background: var(--text-disabled);
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.delete-button:disabled:hover {
+  transform: none;
+}
+
+.carousel-actions {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-4);
+  margin-top: var(--space-8);
+}
+
+.carousel-btn {
+  padding: var(--space-3) var(--space-6);
+  border-radius: var(--radius-md);
+  font-size: var(--text-sm);
+  font-weight: var(--font-medium);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: 1px solid transparent;
+}
+
+.carousel-btn-primary {
+  background: var(--primary-500);
+  color: var(--text-inverse);
+  border-color: var(--primary-500);
+}
+
+.carousel-btn-primary:hover {
+  background: var(--primary-600);
+  border-color: var(--primary-600);
+}
+
+.carousel-btn-secondary {
+  background: var(--bg-secondary);
+  color: var(--text-primary);
+  border-color: var(--border-medium);
+}
+
+.carousel-btn-secondary:hover {
+  background: var(--bg-tertiary);
+  border-color: var(--border-dark);
+}
+
+.empty-gallery {
+  text-align: center;
+  padding: var(--space-12);
+  color: var(--text-secondary);
+}
+
+.empty-gallery-icon {
+  width: 4rem;
+  height: 4rem;
+  margin: 0 auto var(--space-4);
+  color: var(--text-disabled);
+}
+
+.empty-gallery-title {
+  font-size: var(--text-xl);
+  font-weight: var(--font-semibold);
+  color: var(--text-primary);
+  margin: 0 0 var(--space-2) 0;
+}
+
+.empty-gallery-description {
+  font-size: var(--text-base);
+  color: var(--text-secondary);
+  margin: 0 0 var(--space-6) 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .carousel-container {
+    padding: var(--space-4);
   }
+  
+  .image-grid {
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: var(--space-4);
+  }
+  
+  .delete-button {
+    opacity: 1;
+    width: 2rem;
+    height: 2rem;
+  }
+  
+  .carousel-actions {
+    flex-direction: column;
+  }
+  
+  .carousel-btn {
+    width: 100%;
+    justify-content: center;
+  }
+}
 
-  &:disabled {
-    background-color: #bdc3c7;
-    cursor: not-allowed;
+@media (max-width: 480px) {
+  .image-grid {
+    grid-template-columns: 1fr;
   }
 }

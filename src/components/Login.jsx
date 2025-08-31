@@ -1,25 +1,31 @@
 // src/components/Login.js
 import { useState } from 'react';
-import { signInWithEmailAndPassword } from 'firebase/auth';
-
-import { auth } from '../firebase';
-import { useNavigate } from 'react-router-dom'; // Change import here
+import { useNavigate } from 'react-router-dom';
+import { useAuth } from '../context/AuthContext.jsx';
+import '../styles/Login.css';
 
 const Login = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-  const navigate = useNavigate(); // Change this line
+  const [error, setError] = useState('');
+  const [loading, setLoading] = useState(false);
+  const navigate = useNavigate();
+  const { login } = useAuth();
 
   const handleLogin = async (e) => {
     e.preventDefault();
+    setError('');
+    setLoading(true);
 
     try {
-      await signInWithEmailAndPassword(auth, email, password);
-      console.log('Login successful');
-      // Add navigation or other actions upon successful login
-      navigate('/'); // Change this line
+      await login(email, password);
+      console.log('Login berhasil');
+      navigate('/');
     } catch (error) {
-      console.error('Error during login:', error.message);
+      console.error('Error saat login:', error.message);
+      setError(error.message);
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -28,34 +34,40 @@ const Login = () => {
       <div className="Auth-form-container">
         <form className="Auth-form">
           <div className="Auth-form-content">
-            <h3 className="Auth-form-title">Sign In</h3>
+            <h3 className="Auth-form-title">Masuk</h3>
             <div className="form-group mt-3">
-              <label>Email address</label>
+              <label>Alamat Email</label>
               <input
                 type="email"
                 className="form-control mt-1"
-                placeholder="Enter email"
+                placeholder="Masukkan email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
               />
             </div>
             <div className="form-group mt-3">
-              <label>Password</label>
+              <label>Kata Sandi</label>
               <input
                 type="password"
                 className="form-control mt-1"
-                placeholder="Enter password"
+                placeholder="Masukkan kata sandi"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
+            {error && (
+              <div className="alert alert-danger mt-3" role="alert">
+                {error}
+              </div>
+            )}
             <div className="d-grid gap-2 mt-3">
               <button
                 type="submit"
                 className="btn btn-primary"
                 onClick={handleLogin}
+                disabled={loading}
               >
-                Submit
+                {loading ? 'Sedang Masuk...' : 'Masuk'}
               </button>
             </div>
           </div>

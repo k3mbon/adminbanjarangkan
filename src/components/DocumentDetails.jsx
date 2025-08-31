@@ -1,7 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { doc, getDoc, deleteDoc, collection, addDoc, updateDoc } from 'firebase/firestore';
-import { db } from '../firebase';
+import client, { sanityHelpers, queries, urlFor } from '../sanity';
 import BlogForm from './BlogForm';
 
 const DocumentDetails = () => {
@@ -14,17 +13,15 @@ const DocumentDetails = () => {
     setIsEditMode(!isEditMode);
   };
 
-  const handleFormSubmit = async ({ judul, isi, gambarUrls }) => {
+  const handleFormSubmit = async ({ judul, isi, gambarThumbnail }) => {
     try {
-      const documentRef = doc(db, 'poststunda', id);
-      await updateDoc(documentRef, {
+      const updatedDocument = await sanityHelpers.update(id, {
         judul: judul,
         isi: isi,
-        gambarUrls: gambarUrls,
+        gambarThumbnail: gambarThumbnail,
       });
 
-      const updatedDocumentSnapshot = await getDoc(documentRef);
-      setDocumentDetails({ id, ...updatedDocumentSnapshot.data() });
+      setDocumentDetails(updatedDocument);
 
       // Navigate back to the previous page
       navigate(-1);
@@ -40,10 +37,9 @@ const DocumentDetails = () => {
   useEffect(() => {
     const fetchDocumentDetails = async () => {
       try {
-        const documentRef = doc(db, 'poststunda', id);
-        const documentSnapshot = await getDoc(documentRef);
-        if (documentSnapshot.exists()) {
-          setDocumentDetails({ id, ...documentSnapshot.data() });
+        const document = await sanityHelpers.getById(id);
+        if (document) {
+          setDocumentDetails(document);
         } else {
           console.error('Document not found');
         }
@@ -61,7 +57,9 @@ const DocumentDetails = () => {
 
   return (
     <div>
-      <img src={documentDetails.gambarUrls} alt="Thumbnail" />
+      {documentDetails.gambarThumbnail && (
+            <img src={urlFor(documentDetails.gambarThumbnail).url()} alt="Thumbnail" />
+          )}
       <h3>{documentDetails.judul}</h3>
       <div dangerouslySetInnerHTML={{ __html: documentDetails.isi }} />
       <button onClick={toggleEditMode}>Edit</button>

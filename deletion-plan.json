@@ -1,0 +1,1885 @@
+{
+  "timestamp": "2025-08-31T00:30:12.738Z",
+  "totalGroups": 17,
+  "totalToDelete": 18,
+  "plan": [
+    {
+      "groupIndex": 0,
+      "keep": [
+        {
+          "_createdAt": "2025-08-30T05:55:49Z",
+          "_id": "OYjzGK4kNO9kmOILcS66b0",
+          "_updatedAt": "2025-08-30T05:55:49Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756533347079-0.13406671143670823",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533347079-0.6599271390586365",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Di awal tahun ajaran baru 2024/2025 ini Basma berevolusi dengan mengadakan kerjasama dengan The Hotel International School untuk pemberian vokasi berupa ketrampilan kepariwisataan bagi siswa Basma. Jadi nanti Basma akan ada ekstra kepariwisataan yang didukung sepenuhnya oleh The HIS. Nantinya siswa yang ikut pelatihan akan mendapat sertifikat keahliaan yang dapat digunakan untuk melanjutkan ke sekolah pariwisata atau langsung berkerja. Program ini tidak dipungut biaya apapun."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756533348151-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-ea2143da08f637a63a4e41ba3b88e33755719291-614x333-png",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Kerjasama Basma dengan The HIS",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "di awal tahun ajaran baru 2024/2025 ini basma berevolusi dengan mengadakan kerjasama dengan the hotel international school untuk pemberian vokasi berupa ketrampilan kepariwisataan bagi siswa basma. jadi nanti basma akan ada ekstra kepariwisataan yang didukung sepenuhnya oleh the his. nantinya siswa yang ikut pelatihan akan mendapat sertifikat keahliaan yang dapat digunakan untuk melanjutkan ke sekolah pariwisata atau langsung berkerja. program ini tidak dipungut biaya apapun.",
+          "hasImages": true,
+          "contentLength": 480
+        }
+      ],
+      "delete": [
+        {
+          "_createdAt": "2025-08-30T06:14:39Z",
+          "_id": "OYjzGK4kNO9kmOILcS7C7y",
+          "_updatedAt": "2025-08-30T06:14:39Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756534477647-0.12716724173076144",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534477647-0.8682075846615669",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Di awal tahun ajaran baru 2024/2025 ini Basma berevolusi dengan mengadakan kerjasama dengan The Hotel International School untuk pemberian vokasi berupa ketrampilan kepariwisataan bagi siswa Basma. Jadi nanti Basma akan ada ekstra kepariwisataan yang didukung sepenuhnya oleh The HIS. Nantinya siswa yang ikut pelatihan akan mendapat sertifikat keahliaan yang dapat digunakan untuk melanjutkan ke sekolah pariwisata atau langsung berkerja. Program ini tidak dipungut biaya apapun."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756534478753-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-ea2143da08f637a63a4e41ba3b88e33755719291-614x333-png",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Kerjasama Basma dengan The HIS",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "di awal tahun ajaran baru 2024/2025 ini basma berevolusi dengan mengadakan kerjasama dengan the hotel international school untuk pemberian vokasi berupa ketrampilan kepariwisataan bagi siswa basma. jadi nanti basma akan ada ekstra kepariwisataan yang didukung sepenuhnya oleh the his. nantinya siswa yang ikut pelatihan akan mendapat sertifikat keahliaan yang dapat digunakan untuk melanjutkan ke sekolah pariwisata atau langsung berkerja. program ini tidak dipungut biaya apapun.",
+          "hasImages": true,
+          "contentLength": 480
+        }
+      ]
+    },
+    {
+      "groupIndex": 1,
+      "keep": [
+        {
+          "_createdAt": "2025-08-30T05:55:45Z",
+          "_id": "OYjzGK4kNO9kmOILcS66P4",
+          "_updatedAt": "2025-08-30T05:55:45Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "image-1756533343507-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-884092539af6d82a7d2103a8c6e616f20bce26b5-900x1600-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "block-1756533343507-0.6777707899806982",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533343507-0.5990814150571033",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Jumat, 11 Januari 2024 WMB mengadakan kegiatan pelatihan penyusunan laporan dengan aplikasi Microsoft Excel, pemilihan pengurus baru sekaligus evaluasi kegiatan WMB yang telah berjalan didampingi oleh pembina Bapak Kadek Riyantawan. Selamat kepada Weda Prajayoni sebagai ketua terpilih. Selamat bertugas."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            }
+          ],
+          "judul": "Giat Ekskul Basma | Wirausaha Muda Basma (WMB)",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "jumat, 11 januari 2024 wmb mengadakan kegiatan pelatihan penyusunan laporan dengan aplikasi microsoft excel, pemilihan pengurus baru sekaligus evaluasi kegiatan wmb yang telah berjalan didampingi oleh pembina bapak kadek riyantawan. selamat kepada weda prajayoni sebagai ketua terpilih. selamat bertugas.",
+          "hasImages": true,
+          "contentLength": 304
+        }
+      ],
+      "delete": [
+        {
+          "_createdAt": "2025-08-30T06:14:36Z",
+          "_id": "7gNGK9M49tqCuJRrarZCNt",
+          "_updatedAt": "2025-08-30T06:14:36Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "image-1756534474475-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-884092539af6d82a7d2103a8c6e616f20bce26b5-900x1600-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "block-1756534474475-0.9269781408145192",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534474475-0.913786672430728",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Jumat, 11 Januari 2024 WMB mengadakan kegiatan pelatihan penyusunan laporan dengan aplikasi Microsoft Excel, pemilihan pengurus baru sekaligus evaluasi kegiatan WMB yang telah berjalan didampingi oleh pembina Bapak Kadek Riyantawan. Selamat kepada Weda Prajayoni sebagai ketua terpilih. Selamat bertugas."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            }
+          ],
+          "judul": "Giat Ekskul Basma | Wirausaha Muda Basma (WMB)",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "jumat, 11 januari 2024 wmb mengadakan kegiatan pelatihan penyusunan laporan dengan aplikasi microsoft excel, pemilihan pengurus baru sekaligus evaluasi kegiatan wmb yang telah berjalan didampingi oleh pembina bapak kadek riyantawan. selamat kepada weda prajayoni sebagai ketua terpilih. selamat bertugas.",
+          "hasImages": true,
+          "contentLength": 304
+        }
+      ]
+    },
+    {
+      "groupIndex": 2,
+      "keep": [
+        {
+          "_createdAt": "2025-08-30T05:55:41Z",
+          "_id": "j4xn44b1WQw234GlLKKHgf",
+          "_updatedAt": "2025-08-30T05:55:41Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "image-1756533339017-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-87eb41218b1e6ddad9b84b390fa45499a7ca48db-1080x710-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "block-1756533339017-0.7789601334890179",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533339017-0.0721549947047837",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Yudistira Drupadi pangkalan SMAN 1 Banjarangkan yang merupakan organisasi pendidikan bagi kaum muda guna menumbuhkan tunas bangsa agar menjadi generasi yang lebih baik, sanggup bertanggung jawab dan mampu membina dan membangun sebagai penerus generasi selanjutnya. Dalam mencapai tujuannya, diadakanlah acara serah terima jabatan untuk meneruskan misi para pendahulunya, agar terwujud nya cita-cita serta harapan (Ina)."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756533340121-3",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-663e78d5f571af7d53d80eb59e5353c02754bf57-1080x690-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Serah Terima Jabatan AYD",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "yudistira drupadi pangkalan sman 1 banjarangkan yang merupakan organisasi pendidikan bagi kaum muda guna menumbuhkan tunas bangsa agar menjadi generasi yang lebih baik, sanggup bertanggung jawab dan mampu membina dan membangun sebagai penerus generasi selanjutnya. dalam mencapai tujuannya, diadakanlah acara serah terima jabatan untuk meneruskan misi para pendahulunya, agar terwujud nya cita-cita serta harapan (ina).",
+          "hasImages": true,
+          "contentLength": 419
+        }
+      ],
+      "delete": [
+        {
+          "_createdAt": "2025-08-30T06:14:32Z",
+          "_id": "7gNGK9M49tqCuJRrarZCJS",
+          "_updatedAt": "2025-08-30T06:14:32Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "image-1756534469845-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-87eb41218b1e6ddad9b84b390fa45499a7ca48db-1080x710-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "block-1756534469845-0.8996600722147976",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534469845-0.20480115504870144",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Yudistira Drupadi pangkalan SMAN 1 Banjarangkan yang merupakan organisasi pendidikan bagi kaum muda guna menumbuhkan tunas bangsa agar menjadi generasi yang lebih baik, sanggup bertanggung jawab dan mampu membina dan membangun sebagai penerus generasi selanjutnya. Dalam mencapai tujuannya, diadakanlah acara serah terima jabatan untuk meneruskan misi para pendahulunya, agar terwujud nya cita-cita serta harapan (Ina)."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756534471049-3",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-663e78d5f571af7d53d80eb59e5353c02754bf57-1080x690-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Serah Terima Jabatan AYD",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "yudistira drupadi pangkalan sman 1 banjarangkan yang merupakan organisasi pendidikan bagi kaum muda guna menumbuhkan tunas bangsa agar menjadi generasi yang lebih baik, sanggup bertanggung jawab dan mampu membina dan membangun sebagai penerus generasi selanjutnya. dalam mencapai tujuannya, diadakanlah acara serah terima jabatan untuk meneruskan misi para pendahulunya, agar terwujud nya cita-cita serta harapan (ina).",
+          "hasImages": true,
+          "contentLength": 419
+        }
+      ]
+    },
+    {
+      "groupIndex": 3,
+      "keep": [
+        {
+          "_createdAt": "2025-08-30T05:55:36Z",
+          "_id": "j4xn44b1WQw234GlLKKHX4",
+          "_updatedAt": "2025-08-30T05:55:36Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756533332300-0.22850029006802774",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533332300-0.780190059024888",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Halo Sahabat Basma Banjarangkan,"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756533332300-0.8130526756289176",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533332300-0.13405039432037502",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "SMA Negeri 1 Banjarangkan melaksanakan Workshop Review dan Pengembangan Kurikulum TP 2024/2025 dari tgl 8 - 10 juli 2024.dan yang menjadi narasumber adalah Bapak Sekdis Dikpora Prov Bali, setelah itu ' KOMBEL' sami sareng SMA Negeri 1 Banjarangkan melaksanakan kegiatan berbagi dengan tema 'Review dan Refleksi RHK PMM'."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756533334512-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-4e76ffd8b7f31ea6799025de9a0592ebcb087b5d-1600x1200-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "image-1756533335501-3",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-eb161665be8dfe0c22095711b7ae323b51a676f3-1600x1200-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Workshop Review dan Pengembangan Kurikulum TP 2024/2025",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "halo sahabat basma banjarangkan, sma negeri 1 banjarangkan melaksanakan workshop review dan pengembangan kurikulum tp 2024/2025 dari tgl 8 - 10 juli 2024.dan yang menjadi narasumber adalah bapak sekdis dikpora prov bali, setelah itu ' kombel' sami sareng sma negeri 1 banjarangkan melaksanakan kegiatan berbagi dengan tema 'review dan refleksi rhk pmm'.",
+          "hasImages": true,
+          "contentLength": 353
+        }
+      ],
+      "delete": [
+        {
+          "_createdAt": "2025-08-30T06:14:27Z",
+          "_id": "7gNGK9M49tqCuJRrarZCBT",
+          "_updatedAt": "2025-08-30T06:14:27Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756534462440-0.8745599860025799",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534462440-0.7146182777273467",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Halo Sahabat Basma Banjarangkan,"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756534462440-0.008610775298539375",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534462440-0.2878810155518925",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "SMA Negeri 1 Banjarangkan melaksanakan Workshop Review dan Pengembangan Kurikulum TP 2024/2025 dari tgl 8 - 10 juli 2024.dan yang menjadi narasumber adalah Bapak Sekdis Dikpora Prov Bali, setelah itu ' KOMBEL' sami sareng SMA Negeri 1 Banjarangkan melaksanakan kegiatan berbagi dengan tema 'Review dan Refleksi RHK PMM'."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756534463656-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-4e76ffd8b7f31ea6799025de9a0592ebcb087b5d-1600x1200-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "image-1756534464593-3",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-eb161665be8dfe0c22095711b7ae323b51a676f3-1600x1200-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Workshop Review dan Pengembangan Kurikulum TP 2024/2025",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "halo sahabat basma banjarangkan, sma negeri 1 banjarangkan melaksanakan workshop review dan pengembangan kurikulum tp 2024/2025 dari tgl 8 - 10 juli 2024.dan yang menjadi narasumber adalah bapak sekdis dikpora prov bali, setelah itu ' kombel' sami sareng sma negeri 1 banjarangkan melaksanakan kegiatan berbagi dengan tema 'review dan refleksi rhk pmm'.",
+          "hasImages": true,
+          "contentLength": 353
+        }
+      ]
+    },
+    {
+      "groupIndex": 4,
+      "keep": [
+        {
+          "_createdAt": "2025-08-30T05:55:31Z",
+          "_id": "j4xn44b1WQw234GlLKKHNT",
+          "_updatedAt": "2025-08-30T05:55:31Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756533325739-0.9748180040357683",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533325739-0.663655046022924",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Halo Sahabat Basma Banjarangkan,"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756533325739-0.6807252160156867",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533325739-0.16930296130566314",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Pada hari ini sabtu 31 agustus 2024 bertepatan dengan ' Rahina tumpek Wariga' seluruh warga sekolah yang beragama Hindu melaksanakan persembahyangan bersama di Padmasana. Tumpek Wariga merupakan hari untuk memberi penghormatan kepada alam dan lingkungan, khususnya tumbuh-tumbuhan . Perayaan tumpek Wariga juga merupakan penjabaran dari salah satu inti konsep Tri Hita Karana, yakni membangun hubungan harmonis antara manusia dengan alam."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756533325739-0.03845042584873837",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533325739-0.4368105294749014",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Setelah itu dilanjutkan dengan kegiatan berbagi praktik baik yang difasilitasi oleh Kombel ' Sami Sareng ' dengan topik ' Sharing Model Presentasi Touring dalam Pembelajaran.'"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756533327644-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-de21d81d448a7ead6cc42fd3105a001333f44683-1081x729-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "image-1756533328603-3",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-ecea8c265a2b155eb815d040f9dfcf00e26a495b-1082x740-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Rahina Tumpek Wariga & Kombel Sami Sareng",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "halo sahabat basma banjarangkan, pada hari ini sabtu 31 agustus 2024 bertepatan dengan ' rahina tumpek wariga' seluruh warga sekolah yang beragama hindu melaksanakan persembahyangan bersama di padmasana. tumpek wariga merupakan hari untuk memberi penghormatan kepada alam dan lingkungan, khususnya tumbuh-tumbuhan . perayaan tumpek wariga juga merupakan penjabaran dari salah satu inti konsep tri hita karana, yakni membangun hubungan harmonis antara manusia dengan alam. setelah itu dilanjutkan dengan kegiatan berbagi praktik baik yang difasilitasi oleh kombel ' sami sareng ' dengan topik ' sharing model presentasi touring dalam pembelajaran.'",
+          "hasImages": true,
+          "contentLength": 647
+        }
+      ],
+      "delete": [
+        {
+          "_createdAt": "2025-08-30T06:14:21Z",
+          "_id": "j4xn44b1WQw234GlLKKwDe",
+          "_updatedAt": "2025-08-30T06:14:21Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756534457383-0.23752621265738227",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534457383-0.1925272841775012",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Halo Sahabat Basma Banjarangkan,"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756534457383-0.30145922334414643",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534457383-0.11232058733763273",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Pada hari ini sabtu 31 agustus 2024 bertepatan dengan ' Rahina tumpek Wariga' seluruh warga sekolah yang beragama Hindu melaksanakan persembahyangan bersama di Padmasana. Tumpek Wariga merupakan hari untuk memberi penghormatan kepada alam dan lingkungan, khususnya tumbuh-tumbuhan . Perayaan tumpek Wariga juga merupakan penjabaran dari salah satu inti konsep Tri Hita Karana, yakni membangun hubungan harmonis antara manusia dengan alam."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756534457383-0.7896837721454766",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534457383-0.9410587726177722",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Setelah itu dilanjutkan dengan kegiatan berbagi praktik baik yang difasilitasi oleh Kombel ' Sami Sareng ' dengan topik ' Sharing Model Presentasi Touring dalam Pembelajaran.'"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756534459455-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-de21d81d448a7ead6cc42fd3105a001333f44683-1081x729-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "image-1756534460345-3",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-ecea8c265a2b155eb815d040f9dfcf00e26a495b-1082x740-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Rahina Tumpek Wariga & Kombel Sami Sareng",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "halo sahabat basma banjarangkan, pada hari ini sabtu 31 agustus 2024 bertepatan dengan ' rahina tumpek wariga' seluruh warga sekolah yang beragama hindu melaksanakan persembahyangan bersama di padmasana. tumpek wariga merupakan hari untuk memberi penghormatan kepada alam dan lingkungan, khususnya tumbuh-tumbuhan . perayaan tumpek wariga juga merupakan penjabaran dari salah satu inti konsep tri hita karana, yakni membangun hubungan harmonis antara manusia dengan alam. setelah itu dilanjutkan dengan kegiatan berbagi praktik baik yang difasilitasi oleh kombel ' sami sareng ' dengan topik ' sharing model presentasi touring dalam pembelajaran.'",
+          "hasImages": true,
+          "contentLength": 647
+        }
+      ]
+    },
+    {
+      "groupIndex": 5,
+      "keep": [
+        {
+          "_createdAt": "2025-08-30T05:55:24Z",
+          "_id": "j4xn44b1WQw234GlLKKH8O",
+          "_updatedAt": "2025-08-30T05:55:24Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756533321152-0.7096407297058309",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533321152-0.34117904912525576",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Pada hari ini senin 25 nopember 2024 bertepatan dengan Hari Guru Nasional, SMA Negeri 1 Banjarangkan melaksanakan Upacara bendera sebagai wujud peringatan hari Guru Nasional, dan dalam hal ini yang menjadi perangkat upacara adalah para Guru. Dalam amanatnya Bapak Kepala Sekolah selaku Pembina upacara setelah membacakan sambutan Menteri Pendidikan Dasar dan Menengah Repulik Indonesia, Beliau juga menekankan sekaligus mengingatkan para guru agar \"senantiasa mengedepankan tugas dan fungsi serta kewajiban sebagai seorang pendidik, pengajar dan pembimbing\" Setelah itu dilanjutkan dengan penyerahan kenang-kenangan kepada para Guru yang purna tugas."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756533322439-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-bccdd7f1d8ce466a1b0a37fa6f5abbf6c0e1942a-1600x1200-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "image-1756533323601-3",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-de1d0911b066133926073b75d8970730f3a79097-1156x867-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Hari Guru Nasional",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "pada hari ini senin 25 nopember 2024 bertepatan dengan hari guru nasional, sma negeri 1 banjarangkan melaksanakan upacara bendera sebagai wujud peringatan hari guru nasional, dan dalam hal ini yang menjadi perangkat upacara adalah para guru. dalam amanatnya bapak kepala sekolah selaku pembina upacara setelah membacakan sambutan menteri pendidikan dasar dan menengah repulik indonesia, beliau juga menekankan sekaligus mengingatkan para guru agar \"senantiasa mengedepankan tugas dan fungsi serta kewajiban sebagai seorang pendidik, pengajar dan pembimbing\" setelah itu dilanjutkan dengan penyerahan kenang-kenangan kepada para guru yang purna tugas.",
+          "hasImages": true,
+          "contentLength": 650
+        }
+      ],
+      "delete": [
+        {
+          "_createdAt": "2025-08-30T06:14:16Z",
+          "_id": "OYjzGK4kNO9kmOILcS7BOc",
+          "_updatedAt": "2025-08-30T06:14:16Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756534452953-0.5722460281651884",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534452953-0.9026980778129685",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Pada hari ini senin 25 nopember 2024 bertepatan dengan Hari Guru Nasional, SMA Negeri 1 Banjarangkan melaksanakan Upacara bendera sebagai wujud peringatan hari Guru Nasional, dan dalam hal ini yang menjadi perangkat upacara adalah para Guru. Dalam amanatnya Bapak Kepala Sekolah selaku Pembina upacara setelah membacakan sambutan Menteri Pendidikan Dasar dan Menengah Repulik Indonesia, Beliau juga menekankan sekaligus mengingatkan para guru agar \"senantiasa mengedepankan tugas dan fungsi serta kewajiban sebagai seorang pendidik, pengajar dan pembimbing\" Setelah itu dilanjutkan dengan penyerahan kenang-kenangan kepada para Guru yang purna tugas."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756534453890-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-bccdd7f1d8ce466a1b0a37fa6f5abbf6c0e1942a-1600x1200-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "image-1756534454965-3",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-de1d0911b066133926073b75d8970730f3a79097-1156x867-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Hari Guru Nasional",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "pada hari ini senin 25 nopember 2024 bertepatan dengan hari guru nasional, sma negeri 1 banjarangkan melaksanakan upacara bendera sebagai wujud peringatan hari guru nasional, dan dalam hal ini yang menjadi perangkat upacara adalah para guru. dalam amanatnya bapak kepala sekolah selaku pembina upacara setelah membacakan sambutan menteri pendidikan dasar dan menengah repulik indonesia, beliau juga menekankan sekaligus mengingatkan para guru agar \"senantiasa mengedepankan tugas dan fungsi serta kewajiban sebagai seorang pendidik, pengajar dan pembimbing\" setelah itu dilanjutkan dengan penyerahan kenang-kenangan kepada para guru yang purna tugas.",
+          "hasImages": true,
+          "contentLength": 650
+        }
+      ]
+    },
+    {
+      "groupIndex": 6,
+      "keep": [
+        {
+          "_createdAt": "2025-08-30T05:55:19Z",
+          "_id": "7gNGK9M49tqCuJRrarYnpd",
+          "_updatedAt": "2025-08-30T05:55:19Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "image-1756533318907-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-25448b647da744454d9105967d4b1c8069c1a918-1024x768-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "block-1756533318907-0.9868357964687218",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533318907-0.6873464443797284",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Socrates pernah berkata: “Hidup yang tidak direfleksi tidak layak dihidupi.” Jadi, syarat agar hidup layak dihidupi, maka ia harus direfleksi, digugat terus menerus. Ibarat atlet lonpat jauh, ia harus terlebih dahulu bergerak mundur untuk mengambil ancang-ancang agar dengan itu ia bisa meloncat jauh ke depan. Atau seperti anak panah, yang ditarik ke belakang dengan tali busurnya dan dengan itu anak panah bisa melesak ke depan dengan cepat laksana kilat menuju sasaran.Gerak mundur inilah yang dilakukan oleh Litnum Basma pada Hari Kamis, 4 Januari 2023, sebelum kembali melesat maju dengan berbagai program unggulannya. Salam Literasi!"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            }
+          ],
+          "judul": "Litnum Berekspresi",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "socrates pernah berkata: “hidup yang tidak direfleksi tidak layak dihidupi.” jadi, syarat agar hidup layak dihidupi, maka ia harus direfleksi, digugat terus menerus. ibarat atlet lonpat jauh, ia harus terlebih dahulu bergerak mundur untuk mengambil ancang-ancang agar dengan itu ia bisa meloncat jauh ke depan. atau seperti anak panah, yang ditarik ke belakang dengan tali busurnya dan dengan itu anak panah bisa melesak ke depan dengan cepat laksana kilat menuju sasaran.gerak mundur inilah yang dilakukan oleh litnum basma pada hari kamis, 4 januari 2023, sebelum kembali melesat maju dengan berbagai program unggulannya. salam literasi!",
+          "hasImages": true,
+          "contentLength": 639
+        }
+      ],
+      "delete": [
+        {
+          "_createdAt": "2025-08-30T06:14:11Z",
+          "_id": "j4xn44b1WQw234GlLKKw43",
+          "_updatedAt": "2025-08-30T06:14:11Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "image-1756534450148-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-25448b647da744454d9105967d4b1c8069c1a918-1024x768-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "block-1756534450148-0.1646494820580311",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534450148-0.14170688428161693",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Socrates pernah berkata: “Hidup yang tidak direfleksi tidak layak dihidupi.” Jadi, syarat agar hidup layak dihidupi, maka ia harus direfleksi, digugat terus menerus. Ibarat atlet lonpat jauh, ia harus terlebih dahulu bergerak mundur untuk mengambil ancang-ancang agar dengan itu ia bisa meloncat jauh ke depan. Atau seperti anak panah, yang ditarik ke belakang dengan tali busurnya dan dengan itu anak panah bisa melesak ke depan dengan cepat laksana kilat menuju sasaran.Gerak mundur inilah yang dilakukan oleh Litnum Basma pada Hari Kamis, 4 Januari 2023, sebelum kembali melesat maju dengan berbagai program unggulannya. Salam Literasi!"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            }
+          ],
+          "judul": "Litnum Berekspresi",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "socrates pernah berkata: “hidup yang tidak direfleksi tidak layak dihidupi.” jadi, syarat agar hidup layak dihidupi, maka ia harus direfleksi, digugat terus menerus. ibarat atlet lonpat jauh, ia harus terlebih dahulu bergerak mundur untuk mengambil ancang-ancang agar dengan itu ia bisa meloncat jauh ke depan. atau seperti anak panah, yang ditarik ke belakang dengan tali busurnya dan dengan itu anak panah bisa melesak ke depan dengan cepat laksana kilat menuju sasaran.gerak mundur inilah yang dilakukan oleh litnum basma pada hari kamis, 4 januari 2023, sebelum kembali melesat maju dengan berbagai program unggulannya. salam literasi!",
+          "hasImages": true,
+          "contentLength": 639
+        }
+      ]
+    },
+    {
+      "groupIndex": 7,
+      "keep": [
+        {
+          "_createdAt": "2025-08-30T05:55:16Z",
+          "_id": "j4xn44b1WQw234GlLKKGrw",
+          "_updatedAt": "2025-08-30T05:55:16Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "image-1756533314200-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-4aea448eae2162374a39a9a30c2d86db4fc57a1e-1600x901-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "block-1756533314200-0.8985840795918452",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533314200-0.6973503602565185",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Sami Sareng merupakan akronim dari Sarana Pengembangan Diri Sesama Rekan Pengajar. Komunitas belajar ini merupakan wadah berbagi dan belajar warga Basma yang diketuai oleh Ibu Asri Jayanti.Pada hari Jumat, 5 Januari 2024 Sami Sareng mengawali kegiatan pertamanya yang bertajuk Focus Group Discussion Pemberdayaan Komunitas Belajar Sami Sareng dan Pemanfaatan Platform Merdeka Mengajar. Acara dibuka oleh Bapak Kepala SMA N 1 Banjarangkan.Panelis kegiatan diskusi ini adalah Bapak Kd Dwija yang memaparkan tentang Refleksi Kompetensi dan Pengelolaan Kinerja di PMM serta Ibu Rina yang menceritakan aksi nyata yang pernah dilakukan dan telah divalidasi di PMM."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756533315182-3",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-293d1a80393c7e8ae6f04b415610619700f6170c-1600x901-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Komunitas Belajar Basma",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "sami sareng merupakan akronim dari sarana pengembangan diri sesama rekan pengajar. komunitas belajar ini merupakan wadah berbagi dan belajar warga basma yang diketuai oleh ibu asri jayanti.pada hari jumat, 5 januari 2024 sami sareng mengawali kegiatan pertamanya yang bertajuk focus group discussion pemberdayaan komunitas belajar sami sareng dan pemanfaatan platform merdeka mengajar. acara dibuka oleh bapak kepala sma n 1 banjarangkan.panelis kegiatan diskusi ini adalah bapak kd dwija yang memaparkan tentang refleksi kompetensi dan pengelolaan kinerja di pmm serta ibu rina yang menceritakan aksi nyata yang pernah dilakukan dan telah divalidasi di pmm.",
+          "hasImages": true,
+          "contentLength": 658
+        }
+      ],
+      "delete": [
+        {
+          "_createdAt": "2025-08-30T06:14:07Z",
+          "_id": "OYjzGK4kNO9kmOILcS7Ak2",
+          "_updatedAt": "2025-08-30T06:14:07Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "image-1756534444789-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-4aea448eae2162374a39a9a30c2d86db4fc57a1e-1600x901-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "block-1756534444789-0.3235484515509224",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534444789-0.5573277038961233",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Sami Sareng merupakan akronim dari Sarana Pengembangan Diri Sesama Rekan Pengajar. Komunitas belajar ini merupakan wadah berbagi dan belajar warga Basma yang diketuai oleh Ibu Asri Jayanti.Pada hari Jumat, 5 Januari 2024 Sami Sareng mengawali kegiatan pertamanya yang bertajuk Focus Group Discussion Pemberdayaan Komunitas Belajar Sami Sareng dan Pemanfaatan Platform Merdeka Mengajar. Acara dibuka oleh Bapak Kepala SMA N 1 Banjarangkan.Panelis kegiatan diskusi ini adalah Bapak Kd Dwija yang memaparkan tentang Refleksi Kompetensi dan Pengelolaan Kinerja di PMM serta Ibu Rina yang menceritakan aksi nyata yang pernah dilakukan dan telah divalidasi di PMM."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756534446794-3",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-293d1a80393c7e8ae6f04b415610619700f6170c-1600x901-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Komunitas Belajar Basma",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "sami sareng merupakan akronim dari sarana pengembangan diri sesama rekan pengajar. komunitas belajar ini merupakan wadah berbagi dan belajar warga basma yang diketuai oleh ibu asri jayanti.pada hari jumat, 5 januari 2024 sami sareng mengawali kegiatan pertamanya yang bertajuk focus group discussion pemberdayaan komunitas belajar sami sareng dan pemanfaatan platform merdeka mengajar. acara dibuka oleh bapak kepala sma n 1 banjarangkan.panelis kegiatan diskusi ini adalah bapak kd dwija yang memaparkan tentang refleksi kompetensi dan pengelolaan kinerja di pmm serta ibu rina yang menceritakan aksi nyata yang pernah dilakukan dan telah divalidasi di pmm.",
+          "hasImages": true,
+          "contentLength": 658
+        }
+      ]
+    },
+    {
+      "groupIndex": 8,
+      "keep": [
+        {
+          "_createdAt": "2025-08-30T05:55:10Z",
+          "_id": "j4xn44b1WQw234GlLKKGa7",
+          "_updatedAt": "2025-08-30T05:55:10Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756533307447-0.8918565094958368",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533307447-0.605953308635494",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Upacara Bendera dalam rangka memperingati Hari Kesaktian Pancasila, Selasa, 1 Oktober 2024 di SMA Negeri 1 Banjarangkan"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756533308524-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-d7875d585c98dea39834b1189f15d299bb348f39-662x563-png",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "image-1756533309747-3",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-26515988d39d1c7561974ec277a5781fb7dc0455-1074x610-png",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Hari Kesaktian Pancasila",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "upacara bendera dalam rangka memperingati hari kesaktian pancasila, selasa, 1 oktober 2024 di sma negeri 1 banjarangkan",
+          "hasImages": true,
+          "contentLength": 119
+        }
+      ],
+      "delete": [
+        {
+          "_createdAt": "2025-08-30T06:14:02Z",
+          "_id": "7gNGK9M49tqCuJRrarZBsq",
+          "_updatedAt": "2025-08-30T06:14:02Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756534439156-0.05111710242575951",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534439156-0.4952505386703392",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Upacara Bendera dalam rangka memperingati Hari Kesaktian Pancasila, Selasa, 1 Oktober 2024 di SMA Negeri 1 Banjarangkan"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756534440087-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-d7875d585c98dea39834b1189f15d299bb348f39-662x563-png",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "image-1756534441474-3",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-26515988d39d1c7561974ec277a5781fb7dc0455-1074x610-png",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Hari Kesaktian Pancasila",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "upacara bendera dalam rangka memperingati hari kesaktian pancasila, selasa, 1 oktober 2024 di sma negeri 1 banjarangkan",
+          "hasImages": true,
+          "contentLength": 119
+        }
+      ]
+    },
+    {
+      "groupIndex": 9,
+      "keep": [
+        {
+          "_createdAt": "2025-08-30T05:55:06Z",
+          "_id": "j4xn44b1WQw234GlLKKGNm",
+          "_updatedAt": "2025-08-30T05:55:06Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756533304400-0.33345560485072934",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533304400-0.7460726907076298",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Halo Sahabat Basma Banjarangkan,"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756533304400-0.9692682118662059",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533304400-0.7302296143881799",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Pada hari ini senin 29 Juli 2024, SMA Negeri 1 Banjarangkan melaksanakan kegiatan rutin formal yaitu Upacara Bendera dan ini merupakan debut pertama di awal semester TP 2024/2025, serta yang menjadi Pembina adalah Bapak kepala Sekolah. Dalam amanatnya Beliau memberikan evaluasi terkait kegiatan persekolahan secara umum serta apa yang perlu dilakukan yang menyangkut tupoksi seluruh sivitas yang ada."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756533305351-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-e22a1cd05f422bfa559c940c578f2dc490c2a0a9-800x600-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Upacara Bendera",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "halo sahabat basma banjarangkan, pada hari ini senin 29 juli 2024, sma negeri 1 banjarangkan melaksanakan kegiatan rutin formal yaitu upacara bendera dan ini merupakan debut pertama di awal semester tp 2024/2025, serta yang menjadi pembina adalah bapak kepala sekolah. dalam amanatnya beliau memberikan evaluasi terkait kegiatan persekolahan secara umum serta apa yang perlu dilakukan yang menyangkut tupoksi seluruh sivitas yang ada.",
+          "hasImages": true,
+          "contentLength": 434
+        }
+      ],
+      "delete": [
+        {
+          "_createdAt": "2025-08-30T06:13:58Z",
+          "_id": "OYjzGK4kNO9kmOILcS7ATK",
+          "_updatedAt": "2025-08-30T06:13:58Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756534435112-0.027047820814189327",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534435112-0.15017632305964979",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Halo Sahabat Basma Banjarangkan,"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756534435112-0.5397107204026146",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534435112-0.8229369516196188",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Pada hari ini senin 29 Juli 2024, SMA Negeri 1 Banjarangkan melaksanakan kegiatan rutin formal yaitu Upacara Bendera dan ini merupakan debut pertama di awal semester TP 2024/2025, serta yang menjadi Pembina adalah Bapak kepala Sekolah. Dalam amanatnya Beliau memberikan evaluasi terkait kegiatan persekolahan secara umum serta apa yang perlu dilakukan yang menyangkut tupoksi seluruh sivitas yang ada."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756534436335-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-e22a1cd05f422bfa559c940c578f2dc490c2a0a9-800x600-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Upacara Bendera",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "halo sahabat basma banjarangkan, pada hari ini senin 29 juli 2024, sma negeri 1 banjarangkan melaksanakan kegiatan rutin formal yaitu upacara bendera dan ini merupakan debut pertama di awal semester tp 2024/2025, serta yang menjadi pembina adalah bapak kepala sekolah. dalam amanatnya beliau memberikan evaluasi terkait kegiatan persekolahan secara umum serta apa yang perlu dilakukan yang menyangkut tupoksi seluruh sivitas yang ada.",
+          "hasImages": true,
+          "contentLength": 434
+        }
+      ]
+    },
+    {
+      "groupIndex": 10,
+      "keep": [
+        {
+          "_createdAt": "2025-08-30T05:55:03Z",
+          "_id": "j4xn44b1WQw234GlLKKGJf",
+          "_updatedAt": "2025-08-30T05:55:03Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756533300848-0.15484087563563453",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533300849-0.9435305985902411",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Halo Sahabat Basma Banjarangkan,"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756533300849-0.7021066423434914",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533300849-0.7348656645453717",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Pada hari ini senin 15 juli 2024, merupakan hari pertama sekolah setelah libur akhir tahun pelajaran 2023/2024, serta merupakan hari pertama pelaksanaan MPLS ( Masa Pengenalan Lingkungan Sekolah) bagi peserta didik baru SMA Negeri 1 Banjarangkan TP 2024/2025"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756533301806-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-fe713eba2ddb34a0acc64190d21644023250fa00-470x364-png",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "MPLS",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "halo sahabat basma banjarangkan, pada hari ini senin 15 juli 2024, merupakan hari pertama sekolah setelah libur akhir tahun pelajaran 2023/2024, serta merupakan hari pertama pelaksanaan mpls ( masa pengenalan lingkungan sekolah) bagi peserta didik baru sma negeri 1 banjarangkan tp 2024/2025",
+          "hasImages": true,
+          "contentLength": 291
+        }
+      ],
+      "delete": [
+        {
+          "_createdAt": "2025-08-30T06:13:54Z",
+          "_id": "OYjzGK4kNO9kmOILcS7ACc",
+          "_updatedAt": "2025-08-30T06:13:54Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756534431059-0.5492850889643841",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534431059-0.9149349778262923",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Halo Sahabat Basma Banjarangkan,"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756534431059-0.97092147086121",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534431059-0.4318088871594703",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Pada hari ini senin 15 juli 2024, merupakan hari pertama sekolah setelah libur akhir tahun pelajaran 2023/2024, serta merupakan hari pertama pelaksanaan MPLS ( Masa Pengenalan Lingkungan Sekolah) bagi peserta didik baru SMA Negeri 1 Banjarangkan TP 2024/2025"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756534433222-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-fe713eba2ddb34a0acc64190d21644023250fa00-470x364-png",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "MPLS",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "halo sahabat basma banjarangkan, pada hari ini senin 15 juli 2024, merupakan hari pertama sekolah setelah libur akhir tahun pelajaran 2023/2024, serta merupakan hari pertama pelaksanaan mpls ( masa pengenalan lingkungan sekolah) bagi peserta didik baru sma negeri 1 banjarangkan tp 2024/2025",
+          "hasImages": true,
+          "contentLength": 291
+        }
+      ]
+    },
+    {
+      "groupIndex": 11,
+      "keep": [
+        {
+          "_createdAt": "2025-08-30T05:54:59Z",
+          "_id": "7gNGK9M49tqCuJRrarYnVE",
+          "_updatedAt": "2025-08-30T05:54:59Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756533297303-0.494419314168943",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533297303-0.22763813082071627",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Halo Sahabat Basma"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756533297303-0.7897840212014471",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533297303-0.5232693504616881",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Pada hari ini jumat 13 sept 2024 kegiatan literasi atau Jumat Literasi dilaksanakan di pagi hari setelah Puja Trisandya bersama. Dan 'Julit' atau Jumat Literasi hari ini menampilkan kemasan berbeda yaitu pementasan Tari Topeng Jauk Keras dan Jauk Manis, serta disaksikan oleh seluruh warga sekolah, setelah itu perwakilan siswa dan guru serta pegawai memberikan ulasan terkait makna tarian tersebut. Sebelum kegiatan berakhir Bapak Kepala Sekolah selaku penanggung jawab lembaga menyampaikan makna serta filosofi dari tarian tersebut. \"Jauk Manis mencerminkan seorang pemimpin yang bijak, berwibawa, lemah lembut sehingga disegani dan dihormati oleh rakyat. Tetapi di dalam kelembutan tetap tersimpan ketegasan. Dia bisa saja beringas ketika harus menghadapi seterunya, dan Beliau juga mempertegas penjelasannya dengan kutipan sastra, \"yan madyanikang satru wakcura singakerti\" artinya jika berada diantara musuh meraunglah bagai singa\""
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756533298469-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-d09aa4935d87a74dd4cdc6edcfd65da59d76c26a-1599x1200-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "JULIT \"Jumat Literasi\"",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "halo sahabat basma pada hari ini jumat 13 sept 2024 kegiatan literasi atau jumat literasi dilaksanakan di pagi hari setelah puja trisandya bersama. dan 'julit' atau jumat literasi hari ini menampilkan kemasan berbeda yaitu pementasan tari topeng jauk keras dan jauk manis, serta disaksikan oleh seluruh warga sekolah, setelah itu perwakilan siswa dan guru serta pegawai memberikan ulasan terkait makna tarian tersebut. sebelum kegiatan berakhir bapak kepala sekolah selaku penanggung jawab lembaga menyampaikan makna serta filosofi dari tarian tersebut. \"jauk manis mencerminkan seorang pemimpin yang bijak, berwibawa, lemah lembut sehingga disegani dan dihormati oleh rakyat. tetapi di dalam kelembutan tetap tersimpan ketegasan. dia bisa saja beringas ketika harus menghadapi seterunya, dan beliau juga mempertegas penjelasannya dengan kutipan sastra, \"yan madyanikang satru wakcura singakerti\" artinya jika berada diantara musuh meraunglah bagai singa\"",
+          "hasImages": true,
+          "contentLength": 955
+        }
+      ],
+      "delete": [
+        {
+          "_createdAt": "2025-08-30T06:13:49Z",
+          "_id": "7gNGK9M49tqCuJRrarZBbz",
+          "_updatedAt": "2025-08-30T06:13:49Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756534427791-0.26504203273057314",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534427791-0.2151925783281421",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Halo Sahabat Basma"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756534427791-0.49707043709201515",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534427791-0.7245137622508195",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Pada hari ini jumat 13 sept 2024 kegiatan literasi atau Jumat Literasi dilaksanakan di pagi hari setelah Puja Trisandya bersama. Dan 'Julit' atau Jumat Literasi hari ini menampilkan kemasan berbeda yaitu pementasan Tari Topeng Jauk Keras dan Jauk Manis, serta disaksikan oleh seluruh warga sekolah, setelah itu perwakilan siswa dan guru serta pegawai memberikan ulasan terkait makna tarian tersebut. Sebelum kegiatan berakhir Bapak Kepala Sekolah selaku penanggung jawab lembaga menyampaikan makna serta filosofi dari tarian tersebut. \"Jauk Manis mencerminkan seorang pemimpin yang bijak, berwibawa, lemah lembut sehingga disegani dan dihormati oleh rakyat. Tetapi di dalam kelembutan tetap tersimpan ketegasan. Dia bisa saja beringas ketika harus menghadapi seterunya, dan Beliau juga mempertegas penjelasannya dengan kutipan sastra, \"yan madyanikang satru wakcura singakerti\" artinya jika berada diantara musuh meraunglah bagai singa\""
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756534428748-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-d09aa4935d87a74dd4cdc6edcfd65da59d76c26a-1599x1200-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "JULIT \"Jumat Literasi\"",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "halo sahabat basma pada hari ini jumat 13 sept 2024 kegiatan literasi atau jumat literasi dilaksanakan di pagi hari setelah puja trisandya bersama. dan 'julit' atau jumat literasi hari ini menampilkan kemasan berbeda yaitu pementasan tari topeng jauk keras dan jauk manis, serta disaksikan oleh seluruh warga sekolah, setelah itu perwakilan siswa dan guru serta pegawai memberikan ulasan terkait makna tarian tersebut. sebelum kegiatan berakhir bapak kepala sekolah selaku penanggung jawab lembaga menyampaikan makna serta filosofi dari tarian tersebut. \"jauk manis mencerminkan seorang pemimpin yang bijak, berwibawa, lemah lembut sehingga disegani dan dihormati oleh rakyat. tetapi di dalam kelembutan tetap tersimpan ketegasan. dia bisa saja beringas ketika harus menghadapi seterunya, dan beliau juga mempertegas penjelasannya dengan kutipan sastra, \"yan madyanikang satru wakcura singakerti\" artinya jika berada diantara musuh meraunglah bagai singa\"",
+          "hasImages": true,
+          "contentLength": 955
+        },
+        {
+          "_createdAt": "2025-08-30T06:13:49Z",
+          "_id": "drafts.7gNGK9M49tqCuJRrarZBbz",
+          "_updatedAt": "2025-08-30T06:13:49Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756534427791-0.26504203273057314",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534427791-0.2151925783281421",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Halo Sahabat Basma"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756534427791-0.49707043709201515",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534427791-0.7245137622508195",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Pada hari ini jumat 13 sept 2024 kegiatan literasi atau Jumat Literasi dilaksanakan di pagi hari setelah Puja Trisandya bersama. Dan 'Julit' atau Jumat Literasi hari ini menampilkan kemasan berbeda yaitu pementasan Tari Topeng Jauk Keras dan Jauk Manis, serta disaksikan oleh seluruh warga sekolah, setelah itu perwakilan siswa dan guru serta pegawai memberikan ulasan terkait makna tarian tersebut. Sebelum kegiatan berakhir Bapak Kepala Sekolah selaku penanggung jawab lembaga menyampaikan makna serta filosofi dari tarian tersebut. \"Jauk Manis mencerminkan seorang pemimpin yang bijak, berwibawa, lemah lembut sehingga disegani dan dihormati oleh rakyat. Tetapi di dalam kelembutan tetap tersimpan ketegasan. Dia bisa saja beringas ketika harus menghadapi seterunya, dan Beliau juga mempertegas penjelasannya dengan kutipan sastra, \"yan madyanikang satru wakcura singakerti\" artinya jika berada diantara musuh meraunglah bagai singa\""
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756534428748-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-d09aa4935d87a74dd4cdc6edcfd65da59d76c26a-1599x1200-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "JULIT \"Jumat Literasi\"",
+          "slug": {
+            "_type": "slug",
+            "current": "julit-jumat-literasi"
+          },
+          "status": null,
+          "normalizedContent": "halo sahabat basma pada hari ini jumat 13 sept 2024 kegiatan literasi atau jumat literasi dilaksanakan di pagi hari setelah puja trisandya bersama. dan 'julit' atau jumat literasi hari ini menampilkan kemasan berbeda yaitu pementasan tari topeng jauk keras dan jauk manis, serta disaksikan oleh seluruh warga sekolah, setelah itu perwakilan siswa dan guru serta pegawai memberikan ulasan terkait makna tarian tersebut. sebelum kegiatan berakhir bapak kepala sekolah selaku penanggung jawab lembaga menyampaikan makna serta filosofi dari tarian tersebut. \"jauk manis mencerminkan seorang pemimpin yang bijak, berwibawa, lemah lembut sehingga disegani dan dihormati oleh rakyat. tetapi di dalam kelembutan tetap tersimpan ketegasan. dia bisa saja beringas ketika harus menghadapi seterunya, dan beliau juga mempertegas penjelasannya dengan kutipan sastra, \"yan madyanikang satru wakcura singakerti\" artinya jika berada diantara musuh meraunglah bagai singa\"",
+          "hasImages": true,
+          "contentLength": 955
+        }
+      ]
+    },
+    {
+      "groupIndex": 12,
+      "keep": [
+        {
+          "_createdAt": "2025-08-30T05:54:56Z",
+          "_id": "j4xn44b1WQw234GlLKKG5x",
+          "_updatedAt": "2025-08-30T05:54:56Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756533292770-0.3498330773865883",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533292770-0.5836891047354271",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Halo Sahabat Basma Banjarangkan"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756533292770-0.8816163750961239",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533292770-0.3097751417961683",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Pada hari ini sabtu 13 juli 2024, merupakan hari suci menurut kepercayaan Umat Hindu atau lebih dikenal dengan' hari raya Saraswati', pada kesempatan ini SMA Negeri 1 Banjarangkan merayakan sekaligus melaksanakan 'Piodalan' di Padmasana sekolah, dan seluruh warga sekolah yang beragama Hindu melaksanakan persembahyangan bersama dipimpin Jero Mangku setempat."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756533293702-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-2b45ab9e6d9f5b4ab006f7dff3c727d34827b0b3-800x600-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Hari Raya Saraswati",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "halo sahabat basma banjarangkan pada hari ini sabtu 13 juli 2024, merupakan hari suci menurut kepercayaan umat hindu atau lebih dikenal dengan' hari raya saraswati', pada kesempatan ini sma negeri 1 banjarangkan merayakan sekaligus melaksanakan 'piodalan' di padmasana sekolah, dan seluruh warga sekolah yang beragama hindu melaksanakan persembahyangan bersama dipimpin jero mangku setempat.",
+          "hasImages": true,
+          "contentLength": 391
+        }
+      ],
+      "delete": [
+        {
+          "_createdAt": "2025-08-30T06:13:46Z",
+          "_id": "OYjzGK4kNO9kmOILcS79vu",
+          "_updatedAt": "2025-08-30T06:13:46Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756534424525-0.027318629904923508",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534424525-0.621750653066198",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Halo Sahabat Basma Banjarangkan"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756534424525-0.6851430193938992",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534424525-0.35910671000777716",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Pada hari ini sabtu 13 juli 2024, merupakan hari suci menurut kepercayaan Umat Hindu atau lebih dikenal dengan' hari raya Saraswati', pada kesempatan ini SMA Negeri 1 Banjarangkan merayakan sekaligus melaksanakan 'Piodalan' di Padmasana sekolah, dan seluruh warga sekolah yang beragama Hindu melaksanakan persembahyangan bersama dipimpin Jero Mangku setempat."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756534425535-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-2b45ab9e6d9f5b4ab006f7dff3c727d34827b0b3-800x600-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Hari Raya Saraswati",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "halo sahabat basma banjarangkan pada hari ini sabtu 13 juli 2024, merupakan hari suci menurut kepercayaan umat hindu atau lebih dikenal dengan' hari raya saraswati', pada kesempatan ini sma negeri 1 banjarangkan merayakan sekaligus melaksanakan 'piodalan' di padmasana sekolah, dan seluruh warga sekolah yang beragama hindu melaksanakan persembahyangan bersama dipimpin jero mangku setempat.",
+          "hasImages": true,
+          "contentLength": 391
+        }
+      ]
+    },
+    {
+      "groupIndex": 13,
+      "keep": [
+        {
+          "_createdAt": "2025-08-30T05:54:51Z",
+          "_id": "j4xn44b1WQw234GlLKKFz6",
+          "_updatedAt": "2025-08-30T05:54:51Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756533287175-0.06134728228606079",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533287175-0.855669760144161",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Berdasarkan surat edaran Dinas Pendidikan Kepemudaan Dan Olah Raga Provinsi Bali no B.10.100.3.4/1752/UPTD.BPTKK/DIKPORA terkait pelaksanaan Pasraman Kilat, maka pada hari ini rabu 19 juni 2024 SMA Negeri 1 Banjarangkan melaksanakan kegiatan sesuai perihal surat. Dan kegiatan tersebut dibuka oleh Bapak Kepala Sekolah selaku penanggung jawab lembaga."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756533289315-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-ac002668232dfd0d27f1726d902f9712223bd27a-2048x1153-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "image-1756533290426-3",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-7561a9d8461f8a139e7ca5b305fed46c89e52a95-2048x1536-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Pasraman Kilat SMA Negeri 1 Banjarangkan",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "berdasarkan surat edaran dinas pendidikan kepemudaan dan olah raga provinsi bali no b.10.100.3.4/1752/uptd.bptkk/dikpora terkait pelaksanaan pasraman kilat, maka pada hari ini rabu 19 juni 2024 sma negeri 1 banjarangkan melaksanakan kegiatan sesuai perihal surat. dan kegiatan tersebut dibuka oleh bapak kepala sekolah selaku penanggung jawab lembaga.",
+          "hasImages": true,
+          "contentLength": 351
+        }
+      ],
+      "delete": [
+        {
+          "_createdAt": "2025-08-30T06:13:43Z",
+          "_id": "j4xn44b1WQw234GlLKKvYW",
+          "_updatedAt": "2025-08-30T06:13:43Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756534418917-0.34663773761430816",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534418917-0.09867226788493477",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Berdasarkan surat edaran Dinas Pendidikan Kepemudaan Dan Olah Raga Provinsi Bali no B.10.100.3.4/1752/UPTD.BPTKK/DIKPORA terkait pelaksanaan Pasraman Kilat, maka pada hari ini rabu 19 juni 2024 SMA Negeri 1 Banjarangkan melaksanakan kegiatan sesuai perihal surat. Dan kegiatan tersebut dibuka oleh Bapak Kepala Sekolah selaku penanggung jawab lembaga."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756534420849-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-ac002668232dfd0d27f1726d902f9712223bd27a-2048x1153-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "image-1756534422253-3",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-7561a9d8461f8a139e7ca5b305fed46c89e52a95-2048x1536-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Pasraman Kilat SMA Negeri 1 Banjarangkan",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "berdasarkan surat edaran dinas pendidikan kepemudaan dan olah raga provinsi bali no b.10.100.3.4/1752/uptd.bptkk/dikpora terkait pelaksanaan pasraman kilat, maka pada hari ini rabu 19 juni 2024 sma negeri 1 banjarangkan melaksanakan kegiatan sesuai perihal surat. dan kegiatan tersebut dibuka oleh bapak kepala sekolah selaku penanggung jawab lembaga.",
+          "hasImages": true,
+          "contentLength": 351
+        }
+      ]
+    },
+    {
+      "groupIndex": 14,
+      "keep": [
+        {
+          "_createdAt": "2025-08-30T05:54:45Z",
+          "_id": "7gNGK9M49tqCuJRrarYnJh",
+          "_updatedAt": "2025-08-30T05:54:45Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756533284122-0.9709791116306166",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533284122-0.07832664193587191",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Halo Sahabat Basma Banjarangkan,"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756533284122-0.6542493458322582",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533284122-0.8956038161264197",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Pada hari ini sabtu 17 Agustus 2024, merupakan hari perayaan HUT RI yang ke 79, terkait akan hal tersebut SMA Negeri 1 Banjarangkan melaksanakan Upacara Bendera sebagai wujud cinta tanah air sekaligus mengenang jasa-jasa para Pahlawan yang telah rela berkorban demi kemerdekaan bangsa yang kita cintai bersama."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756533285049-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-cbe0c23188866b6652ccee3b83d2b31d7fb8029f-638x529-png",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Upacara Bendera 17 Agustu 2024",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "halo sahabat basma banjarangkan, pada hari ini sabtu 17 agustus 2024, merupakan hari perayaan hut ri yang ke 79, terkait akan hal tersebut sma negeri 1 banjarangkan melaksanakan upacara bendera sebagai wujud cinta tanah air sekaligus mengenang jasa-jasa para pahlawan yang telah rela berkorban demi kemerdekaan bangsa yang kita cintai bersama.",
+          "hasImages": true,
+          "contentLength": 343
+        }
+      ],
+      "delete": [
+        {
+          "_createdAt": "2025-08-30T06:13:37Z",
+          "_id": "j4xn44b1WQw234GlLKKvMB",
+          "_updatedAt": "2025-08-30T06:13:37Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756534415874-0.6936587695052181",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534415874-0.3880127090245089",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Halo Sahabat Basma Banjarangkan,"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756534415874-0.9757074317909453",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534415874-0.7195570630275538",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Pada hari ini sabtu 17 Agustus 2024, merupakan hari perayaan HUT RI yang ke 79, terkait akan hal tersebut SMA Negeri 1 Banjarangkan melaksanakan Upacara Bendera sebagai wujud cinta tanah air sekaligus mengenang jasa-jasa para Pahlawan yang telah rela berkorban demi kemerdekaan bangsa yang kita cintai bersama."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756534416783-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-cbe0c23188866b6652ccee3b83d2b31d7fb8029f-638x529-png",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Upacara Bendera 17 Agustu 2024",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "halo sahabat basma banjarangkan, pada hari ini sabtu 17 agustus 2024, merupakan hari perayaan hut ri yang ke 79, terkait akan hal tersebut sma negeri 1 banjarangkan melaksanakan upacara bendera sebagai wujud cinta tanah air sekaligus mengenang jasa-jasa para pahlawan yang telah rela berkorban demi kemerdekaan bangsa yang kita cintai bersama.",
+          "hasImages": true,
+          "contentLength": 343
+        }
+      ]
+    },
+    {
+      "groupIndex": 15,
+      "keep": [
+        {
+          "_createdAt": "2025-08-30T05:54:43Z",
+          "_id": "j4xn44b1WQw234GlLKKFeX",
+          "_updatedAt": "2025-08-30T05:54:43Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756533279630-0.3048286858225515",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533279630-0.5717394556190678",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Basswara (Ekstra tabuh SMA N 1 Banjarangkan) dan Ibu guru beserta pegawai SMA Negeri 1 Banjarangkan ngaturang ayah dalam kegiatan Melasti Ida Batara Pura Agung Kentel Gumi kasarengin Ida Batara Pura Pasar Agung Besakih Giri Tohlangkir, Kamis, 7 Nopember 2024."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756533280643-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-d302e3d4c2a949791c61dc5d7c6614c4075359d2-1600x1200-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "image-1756533281797-3",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-9ddfc4d3adbd475dd5e333456e26120d924f29e1-2048x1536-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Basswara Ngaturan Ayah",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "basswara (ekstra tabuh sma n 1 banjarangkan) dan ibu guru beserta pegawai sma negeri 1 banjarangkan ngaturang ayah dalam kegiatan melasti ida batara pura agung kentel gumi kasarengin ida batara pura pasar agung besakih giri tohlangkir, kamis, 7 nopember 2024.",
+          "hasImages": true,
+          "contentLength": 259
+        }
+      ],
+      "delete": [
+        {
+          "_createdAt": "2025-08-30T06:13:34Z",
+          "_id": "OYjzGK4kNO9kmOILcS79aQ",
+          "_updatedAt": "2025-08-30T06:13:34Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756534411800-0.3760060084875929",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534411800-0.3168875240694351",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Basswara (Ekstra tabuh SMA N 1 Banjarangkan) dan Ibu guru beserta pegawai SMA Negeri 1 Banjarangkan ngaturang ayah dalam kegiatan Melasti Ida Batara Pura Agung Kentel Gumi kasarengin Ida Batara Pura Pasar Agung Besakih Giri Tohlangkir, Kamis, 7 Nopember 2024."
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756534412740-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-d302e3d4c2a949791c61dc5d7c6614c4075359d2-1600x1200-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            },
+            {
+              "_key": "image-1756534413738-3",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-9ddfc4d3adbd475dd5e333456e26120d924f29e1-2048x1536-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Basswara Ngaturan Ayah",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "basswara (ekstra tabuh sma n 1 banjarangkan) dan ibu guru beserta pegawai sma negeri 1 banjarangkan ngaturang ayah dalam kegiatan melasti ida batara pura agung kentel gumi kasarengin ida batara pura pasar agung besakih giri tohlangkir, kamis, 7 nopember 2024.",
+          "hasImages": true,
+          "contentLength": 259
+        }
+      ]
+    },
+    {
+      "groupIndex": 16,
+      "keep": [
+        {
+          "_createdAt": "2025-08-30T05:54:38Z",
+          "_id": "OYjzGK4kNO9kmOILcS64as",
+          "_updatedAt": "2025-08-30T05:54:38Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756533275582-0.1049618835016064",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533275582-0.12413778333789605",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Pembinaan dan pendampingan oleh Bapak Pengawas I Kadek Arta di SMA Negeri 1 Banjarangkan, Senin, 4 Nopember 2024"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756533275582-0.8895362497443178",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756533275582-0.9670280273722065",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Beliau menyampaikan bahwa disiplin adalah kunci layanan pendidikan yang berkualitas. Beliau juga mengajak Bapak Ibu Guru dan Pegawai untuk bekerja keras, bekerja cerdas, dan bekerja ikhlas"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756533276738-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-c707e08a558012049e303a97dea0382182606268-1280x960-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Pembinaan dan Pendampingan",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "pembinaan dan pendampingan oleh bapak pengawas i kadek arta di sma negeri 1 banjarangkan, senin, 4 nopember 2024 beliau menyampaikan bahwa disiplin adalah kunci layanan pendidikan yang berkualitas. beliau juga mengajak bapak ibu guru dan pegawai untuk bekerja keras, bekerja cerdas, dan bekerja ikhlas",
+          "hasImages": true,
+          "contentLength": 301
+        }
+      ],
+      "delete": [
+        {
+          "_createdAt": "2025-08-30T06:13:30Z",
+          "_id": "OYjzGK4kNO9kmOILcS79Ji",
+          "_updatedAt": "2025-08-30T06:13:30Z",
+          "description": null,
+          "isi": [
+            {
+              "_key": "block-1756534408742-0.3336513748362846",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534408742-0.45214046922273643",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Pembinaan dan pendampingan oleh Bapak Pengawas I Kadek Arta di SMA Negeri 1 Banjarangkan, Senin, 4 Nopember 2024"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "block-1756534408742-0.42152301093604594",
+              "_type": "block",
+              "children": [
+                {
+                  "_key": "span-1756534408742-0.03686416951034377",
+                  "_type": "span",
+                  "marks": [],
+                  "text": "Beliau menyampaikan bahwa disiplin adalah kunci layanan pendidikan yang berkualitas. Beliau juga mengajak Bapak Ibu Guru dan Pegawai untuk bekerja keras, bekerja cerdas, dan bekerja ikhlas"
+                }
+              ],
+              "markDefs": [],
+              "style": "normal"
+            },
+            {
+              "_key": "image-1756534409711-2",
+              "_type": "image",
+              "alt": "Content image",
+              "asset": {
+                "_ref": "image-c707e08a558012049e303a97dea0382182606268-1280x960-jpg",
+                "_type": "reference"
+              },
+              "caption": ""
+            }
+          ],
+          "judul": "Pembinaan dan Pendampingan",
+          "slug": null,
+          "status": null,
+          "normalizedContent": "pembinaan dan pendampingan oleh bapak pengawas i kadek arta di sma negeri 1 banjarangkan, senin, 4 nopember 2024 beliau menyampaikan bahwa disiplin adalah kunci layanan pendidikan yang berkualitas. beliau juga mengajak bapak ibu guru dan pegawai untuk bekerja keras, bekerja cerdas, dan bekerja ikhlas",
+          "hasImages": true,
+          "contentLength": 301
+        }
+      ]
+    }
+  ]
+}

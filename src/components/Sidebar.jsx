@@ -1,98 +1,125 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import {
-  FaHome,
-  FaCalendarAlt,
-  FaNewspaper,
-  FaImages,
-  FaTrophy,
-  FaPhotoVideo,
-} from 'react-icons/fa';
-import { signOut } from 'firebase/auth';
-import { auth } from '../firebase';
+  HomeIcon,
+  CalendarIcon,
+  PhotoIcon,
+  TrophyIcon,
+  ViewfinderCircleIcon,
+  ArrowRightOnRectangleIcon
+} from '@heroicons/react/24/outline';
 import { useNavigate } from 'react-router-dom';
-import { useEffect, useState } from 'react';  // Import useEffect and useState
-import { onAuthStateChanged } from 'firebase/auth';  // Import onAuthStateChanged
+import { useAuth } from '../context/AuthContext.jsx';
 import Logo from '../assets/logo.png';
-import { Col, Row } from 'react-bootstrap';
+import './Sidebar/Sidebar.css';
 // ... (imports)
 
 const Sidebar = () => {
   const navigate = useNavigate();
-  const [user, setUser] = useState(null);
+  const location = useLocation();
+  const { currentUser, logout } = useAuth();
 
-  useEffect(() => {
-    // Listen for changes in authentication state
-    const unsubscribe = onAuthStateChanged(auth, (user) => {
-      setUser(user);
-    });
+  const isActive = (path) => location.pathname === path;
 
-    // Clean up the subscription when the component unmounts
-    return () => unsubscribe();
-  }, []); // Ensure this effect runs only once during component mount
-
+  const getInitials = (email) => {
+    return email ? email.charAt(0).toUpperCase() : 'U';
+  };
 
   const handleLogout = async () => {
     try {
-      await signOut(auth);
-      console.log('User signed out successfully');
+      logout();
+      console.log('Pengguna berhasil keluar');
       navigate('/login');
     } catch (error) {
-      console.error('Error signing out:', error);
+      console.error('Error saat keluar:', error);
     }
   };
 
   return (
-    <>
-      <div>
-        <Row className="sidebar p-2">
-          <Col>
-            <img src={Logo} alt="Logo" />
-          </Col>
-        </Row>
-        <Row className="sidebar p-2">
-          <Col>
-            <span className="brand-name fs-4 mt-2">
-              SMA Negeri 1 Banjarangkan
-            </span>
-          </Col>
-        </Row>
-        <hr className="text-dark" />
-        <div className="list-group lish-group-flush">
-          <Link className="list-group-item py-2 mt-2" to="/">
-            <FaHome className="fs-5 me-2" />
-            <span className="fs-5">Home</span>
-          </Link>
-          <Link className="list-group-item py-2 mt-2" to="/agenda">
-            <FaCalendarAlt className="fs-5 me-2" />
-            <span className="fs-5">Agenda</span>
-          </Link>
-          <Link className="list-group-item py-2 mt-2" to="/posts">
-            <FaNewspaper className="fs-5 me-2" />
-            <span className="fs-5">Postingan Terbit</span>
-          </Link>
-          <Link className="list-group-item py-2 mt-2" to="/galeri">
-            <FaImages className="fs-5 me-2" />
-            <span className="fs-5">Galeri</span>
-          </Link>
-          <Link className="list-group-item py-2 mt-2" to="/prestasi">
-            <FaTrophy className="fs-5 me-2" />
-            <span className="fs-5">Prestasi</span>
-          </Link>
-          <Link className="list-group-item py-2 mt-2" to="/carousel">
-            <FaPhotoVideo className="fs-5 me-2" />
-            <span className="fs-5">Foto Carousel</span>
-          </Link>
-          {/* Display user email if available */}
-          <h2>Admin Saat Ini</h2>
-          {user && user.email && (
-            <p className="mt-2 fs-5">{user.email}</p>
-          )}
-          <button className="mt-5" onClick={handleLogout}>
-            Logout
-          </button>
+    <div className="sidebar">
+      {/* Sidebar Header */}
+      <div className="sidebar-header">
+        <div className="sidebar-logo">
+          <img src={Logo} alt="Logo" />
+          <div>
+            <h1 className="sidebar-title">Admin Panel</h1>
+            <p className="sidebar-subtitle">SMA Negeri 1 Banjarangkan</p>
+          </div>
         </div>
       </div>
-    </>
+      
+      {/* Navigation */}
+      <nav className="sidebar-nav">
+        <div className="nav-section">
+          <h3 className="nav-section-title">Menu Utama</h3>
+          <ul className="nav-list">
+            <li>
+              <Link 
+                to="/" 
+                className={`nav-item ${isActive('/') ? 'active' : ''}`}
+              >
+                <HomeIcon className="nav-item-icon" />
+                <span className="nav-item-text">Beranda</span>
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/agenda" 
+                className={`nav-item ${isActive('/agenda') ? 'active' : ''}`}
+              >
+                <CalendarIcon className="nav-item-icon" />
+                <span className="nav-item-text">Agenda</span>
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/galeri" 
+                className={`nav-item ${isActive('/galeri') ? 'active' : ''}`}
+              >
+                <PhotoIcon className="nav-item-icon" />
+                <span className="nav-item-text">Galeri</span>
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/prestasi" 
+                className={`nav-item ${isActive('/prestasi') ? 'active' : ''}`}
+              >
+                <TrophyIcon className="nav-item-icon" />
+                <span className="nav-item-text">Prestasi</span>
+              </Link>
+            </li>
+            <li>
+              <Link 
+                to="/carousel" 
+                className={`nav-item ${isActive('/carousel') ? 'active' : ''}`}
+              >
+                <ViewfinderCircleIcon className="nav-item-icon" />
+                <span className="nav-item-text">Foto Carousel</span>
+              </Link>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      
+      {/* User Section */}
+      <div className="sidebar-user">
+        {currentUser && currentUser.email && (
+          <div className="user-info">
+            <div className="user-avatar">
+              {getInitials(currentUser.email)}
+            </div>
+            <div className="user-details">
+              <p className="user-name">Admin</p>
+              <p className="user-email">{currentUser.email}</p>
+            </div>
+          </div>
+        )}
+        <button className="logout-btn" onClick={handleLogout}>
+          <ArrowRightOnRectangleIcon className="nav-item-icon" />
+          <span>Keluar</span>
+        </button>
+      </div>
+    </div>
   );
 };
 

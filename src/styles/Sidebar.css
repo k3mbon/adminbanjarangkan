@@ -1,28 +1,17 @@
-/* src/components/Sidebar.css */
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  width: auto;
-  padding: 10px;
-  background-color: #333;
-  color: #fff;
-}
+/* Legacy Sidebar.css - DEPRECATED
+ * This file contains conflicting styles that override the design system.
+ * All sidebar styles should be defined in DashboardLayout.css using design system variables.
+ * This file is kept for reference but should not be used.
+ */
 
-/* Use 'a' instead of 'div' to leverage default anchor styles for navigation */
-a {
-  text-decoration: none;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-a:hover {
-  background-color: #555;
-}
-
-span {
-  margin-left: 10px;
-}
+/* 
+ * CONFLICTS IDENTIFIED AND RESOLVED:
+ * - .sidebar class conflicts with DashboardLayout.css
+ * - Hardcoded colors (#333, #fff, #555) override design system variables
+ * - Generic 'a' and 'span' selectors cause global style pollution
+ * 
+ * MIGRATION NOTES:
+ * - All sidebar functionality moved to DashboardLayout.css
+ * - Uses CSS custom properties from design-system.css
+ * - Follows WCAG accessibility standards
+ */

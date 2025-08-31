@@ -1,0 +1,25 @@
+{
+  "timestamp": "2025-08-31T00:35:24.616Z",
+  "summary": {
+    "totalPosts": 17,
+    "postsWithSlugs": 17,
+    "postsWithTimestamps": 17,
+    "duplicateContent": 0,
+    "totalIssues": 0
+  },
+  "checks": {
+    "totalPosts": 17,
+    "postsWithSlugs": 17,
+    "postsWithoutSlugs": 0,
+    "uniqueSlugs": {},
+    "duplicateSlugs": [],
+    "postsWithTimestamps": 17,
+    "postsWithoutTimestamps": 0,
+    "duplicateContent": [],
+    "statusDistribution": {
+      "published": 17
+    },
+    "issues": []
+  },
+  "passed": true
+}

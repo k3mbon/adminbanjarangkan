@@ -1,0 +1,127 @@
+{
+  "timestamp": "2025-08-31T00:35:18.025Z",
+  "totalProcessed": 17,
+  "totalUpdated": 17,
+  "totalErrors": 0,
+  "results": [
+    {
+      "id": "OYjzGK4kNO9kmOILcS64as",
+      "title": "Pembinaan dan Pendampingan",
+      "status": "updated",
+      "newStatus": "published",
+      "timestamp": "2025-08-31T00:34:55.231Z"
+    },
+    {
+      "id": "j4xn44b1WQw234GlLKKFeX",
+      "title": "Basswara Ngaturan Ayah",
+      "status": "updated",
+      "newStatus": "published",
+      "timestamp": "2025-08-31T00:34:56.653Z"
+    },
+    {
+      "id": "7gNGK9M49tqCuJRrarYnJh",
+      "title": "Upacara Bendera 17 Agustu 2024",
+      "status": "updated",
+      "newStatus": "published",
+      "timestamp": "2025-08-31T00:34:58.252Z"
+    },
+    {
+      "id": "j4xn44b1WQw234GlLKKFz6",
+      "title": "Pasraman Kilat SMA Negeri 1 Banjarangkan",
+      "status": "updated",
+      "newStatus": "published",
+      "timestamp": "2025-08-31T00:34:59.673Z"
+    },
+    {
+      "id": "j4xn44b1WQw234GlLKKG5x",
+      "title": "Hari Raya Saraswati",
+      "status": "updated",
+      "newStatus": "published",
+      "timestamp": "2025-08-31T00:35:01.289Z"
+    },
+    {
+      "id": "7gNGK9M49tqCuJRrarYnVE",
+      "title": "JULIT \"Jumat Literasi\"",
+      "status": "updated",
+      "newStatus": "published",
+      "timestamp": "2025-08-31T00:35:02.705Z"
+    },
+    {
+      "id": "j4xn44b1WQw234GlLKKGJf",
+      "title": "MPLS",
+      "status": "updated",
+      "newStatus": "published",
+      "timestamp": "2025-08-31T00:35:04.318Z"
+    },
+    {
+      "id": "j4xn44b1WQw234GlLKKGNm",
+      "title": "Upacara Bendera",
+      "status": "updated",
+      "newStatus": "published",
+      "timestamp": "2025-08-31T00:35:05.755Z"
+    },
+    {
+      "id": "j4xn44b1WQw234GlLKKGa7",
+      "title": "Hari Kesaktian Pancasila",
+      "status": "updated",
+      "newStatus": "published",
+      "timestamp": "2025-08-31T00:35:07.328Z"
+    },
+    {
+      "id": "j4xn44b1WQw234GlLKKGrw",
+      "title": "Komunitas Belajar Basma",
+      "status": "updated",
+      "newStatus": "published",
+      "timestamp": "2025-08-31T00:35:08.776Z"
+    },
+    {
+      "id": "7gNGK9M49tqCuJRrarYnpd",
+      "title": "Litnum Berekspresi",
+      "status": "updated",
+      "newStatus": "published",
+      "timestamp": "2025-08-31T00:35:10.410Z"
+    },
+    {
+      "id": "j4xn44b1WQw234GlLKKH8O",
+      "title": "Hari Guru Nasional",
+      "status": "updated",
+      "newStatus": "published",
+      "timestamp": "2025-08-31T00:35:11.831Z"
+    },
+    {
+      "id": "j4xn44b1WQw234GlLKKHNT",
+      "title": "Rahina Tumpek Wariga & Kombel Sami Sareng",
+      "status": "updated",
+      "newStatus": "published",
+      "timestamp": "2025-08-31T00:35:13.390Z"
+    },
+    {
+      "id": "j4xn44b1WQw234GlLKKHX4",
+      "title": "Workshop Review dan Pengembangan Kurikulum TP 2024/2025",
+      "status": "updated",
+      "newStatus": "published",
+      "timestamp": "2025-08-31T00:35:14.852Z"
+    },
+    {
+      "id": "j4xn44b1WQw234GlLKKHgf",
+      "title": "Serah Terima Jabatan AYD",
+      "status": "updated",
+      "newStatus": "published",
+      "timestamp": "2025-08-31T00:35:15.878Z"
+    },
+    {
+      "id": "OYjzGK4kNO9kmOILcS66P4",
+      "title": "Giat Ekskul Basma | Wirausaha Muda Basma (WMB)",
+      "status": "updated",
+      "newStatus": "published",
+      "timestamp": "2025-08-31T00:35:16.897Z"
+    },
+    {
+      "id": "OYjzGK4kNO9kmOILcS66b0",
+      "title": "Kerjasama Basma dengan The HIS",
+      "status": "updated",
+      "newStatus": "published",
+      "timestamp": "2025-08-31T00:35:17.921Z"
+    }
+  ]
+}

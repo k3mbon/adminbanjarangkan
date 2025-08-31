@@ -1,0 +1,164 @@
+[
+  {
+    "uid": "02Yri238T4TMgwlvEfzrr1QD7Cg2",
+    "email": "superadmin@sman1banjarangkan.sch.id",
+    "emailVerified": false,
+    "disabled": false,
+    "metadata": {
+      "creationTime": "Thu, 22 Feb 2024 14:18:57 GMT",
+      "lastSignInTime": "Sun, 01 Dec 2024 01:14:46 GMT",
+      "lastRefreshTime": "Sun, 01 Dec 2024 01:14:46 GMT"
+    },
+    "providerData": [
+      {
+        "uid": "superadmin@sman1banjarangkan.sch.id",
+        "email": "superadmin@sman1banjarangkan.sch.id",
+        "providerId": "password"
+      }
+    ]
+  },
+  {
+    "uid": "3CIgsTGu74RFvhEN13Lc7uXLPmk2",
+    "email": "admin4@sman1banjarangkan.sch.id",
+    "emailVerified": false,
+    "disabled": false,
+    "metadata": {
+      "creationTime": "Thu, 22 Feb 2024 12:26:11 GMT",
+      "lastSignInTime": null,
+      "lastRefreshTime": null
+    },
+    "providerData": [
+      {
+        "uid": "admin4@sman1banjarangkan.sch.id",
+        "email": "admin4@sman1banjarangkan.sch.id",
+        "providerId": "password"
+      }
+    ]
+  },
+  {
+    "uid": "B2Ovl5kId2dEoF394li7hAY3F2F3",
+    "email": "admin1@sman1banjarangkan.sch.id",
+    "emailVerified": false,
+    "disabled": false,
+    "metadata": {
+      "creationTime": "Thu, 22 Feb 2024 12:25:12 GMT",
+      "lastSignInTime": "Mon, 22 Jul 2024 03:26:49 GMT",
+      "lastRefreshTime": "Mon, 22 Jul 2024 03:26:49 GMT"
+    },
+    "providerData": [
+      {
+        "uid": "admin1@sman1banjarangkan.sch.id",
+        "email": "admin1@sman1banjarangkan.sch.id",
+        "providerId": "password"
+      }
+    ]
+  },
+  {
+    "uid": "RnMk3mary2R0MPNCxw7VrJu9PxE3",
+    "email": "admin2@sman1banjarangkan.sch.id",
+    "emailVerified": false,
+    "disabled": false,
+    "metadata": {
+      "creationTime": "Thu, 22 Feb 2024 12:25:29 GMT",
+      "lastSignInTime": null,
+      "lastRefreshTime": null
+    },
+    "providerData": [
+      {
+        "uid": "admin2@sman1banjarangkan.sch.id",
+        "email": "admin2@sman1banjarangkan.sch.id",
+        "providerId": "password"
+      }
+    ]
+  },
+  {
+    "uid": "Um85xDw8RDM7buKjKhuX7HtMqPd2",
+    "email": "admin3@sman1banjarangkan.sch.id",
+    "emailVerified": false,
+    "disabled": false,
+    "metadata": {
+      "creationTime": "Thu, 22 Feb 2024 12:25:55 GMT",
+      "lastSignInTime": null,
+      "lastRefreshTime": null
+    },
+    "providerData": [
+      {
+        "uid": "admin3@sman1banjarangkan.sch.id",
+        "email": "admin3@sman1banjarangkan.sch.id",
+        "providerId": "password"
+      }
+    ]
+  },
+  {
+    "uid": "Za9yHS7iCINuwbuAVYxuYjIGOPv1",
+    "email": "firebase@flutterflow.io",
+    "emailVerified": false,
+    "disabled": false,
+    "metadata": {
+      "creationTime": "Mon, 12 Feb 2024 08:38:53 GMT",
+      "lastSignInTime": "Mon, 12 Feb 2024 08:38:53 GMT",
+      "lastRefreshTime": "Mon, 12 Feb 2024 09:33:54 GMT"
+    },
+    "providerData": [
+      {
+        "uid": "firebase@flutterflow.io",
+        "email": "firebase@flutterflow.io",
+        "providerId": "password"
+      }
+    ]
+  },
+  {
+    "uid": "aDeIrq3d31PvYvMREFvpj2I4Ujz2",
+    "email": "admin5@sman1banjarangkan.sch.id",
+    "emailVerified": false,
+    "disabled": false,
+    "metadata": {
+      "creationTime": "Thu, 22 Feb 2024 12:26:24 GMT",
+      "lastSignInTime": null,
+      "lastRefreshTime": null
+    },
+    "providerData": [
+      {
+        "uid": "admin5@sman1banjarangkan.sch.id",
+        "email": "admin5@sman1banjarangkan.sch.id",
+        "providerId": "password"
+      }
+    ]
+  },
+  {
+    "uid": "qcK0XJBq5bakdGOOsWYCP5XR9Fz1",
+    "email": "admin@admin.co",
+    "emailVerified": false,
+    "disabled": false,
+    "metadata": {
+      "creationTime": "Wed, 21 Feb 2024 16:42:57 GMT",
+      "lastSignInTime": "Wed, 21 Feb 2024 16:43:08 GMT",
+      "lastRefreshTime": "Tue, 26 Mar 2024 12:40:05 GMT"
+    },
+    "providerData": [
+      {
+        "uid": "admin@admin.co",
+        "email": "admin@admin.co",
+        "providerId": "password"
+      }
+    ]
+  },
+  {
+    "uid": "sMARBfng3PYozn6XDp5jbsyhG163",
+    "email": "admin@sman1banjarangkan.sch.id",
+    "emailVerified": false,
+    "disabled": false,
+    "metadata": {
+      "creationTime": "Wed, 27 Dec 2023 11:07:16 GMT",
+      "lastSignInTime": "Wed, 27 Dec 2023 11:10:10 GMT",
+      "lastRefreshTime": "Wed, 27 Dec 2023 11:10:10 GMT"
+    },
+    "providerData": [
+      {
+        "uid": "admin@sman1banjarangkan.sch.id",
+        "email": "admin@sman1banjarangkan.sch.id",
+        "providerId": "password"
+      }
+    ]
+  }
+]

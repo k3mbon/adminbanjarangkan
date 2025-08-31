@@ -1,8 +1,7 @@
 // AlbumPreview.jsx
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import { db } from '../firebase';
-import { collection, doc, getDoc } from 'firebase/firestore';
+import client, { sanityHelpers, queries, urlFor } from '../sanity';
 
 const AlbumPreview = () => {
     const { albumId } = useParams();
@@ -12,9 +11,8 @@ const AlbumPreview = () => {
         console.log('Album ID:', albumId);
         const fetchAlbum = async () => {
           try {
-            const albumDoc = await getDoc(doc(db, 'album_foto', albumId));
-            if (albumDoc.exists()) {
-              const albumData = albumDoc.data();
+            const albumData = await sanityHelpers.getById(albumId);
+            if (albumData) {
               console.log('Fetched Album Data:', albumData);
               setAlbum(albumData);
             } else {
@@ -36,12 +34,12 @@ const AlbumPreview = () => {
     return (
         <div>
           <h2>{album.albumName}</h2>
-          {album.imageUrls && album.imageUrls.length > 0 ? (
+          {album.images && album.images.length > 0 ? (
             <div>
               <ul>
-                {album.imageUrls.map((imageUrl, index) => (
+                {album.images.map((image, index) => (
                   <li key={index}>
-                    <img src={imageUrl} alt={`album-image-${index}`} />
+                    <img src={urlFor(image).url()} alt={`album-image-${index}`} />
                   </li>
                 ))}
               </ul>

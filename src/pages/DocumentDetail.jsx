@@ -1,10 +1,10 @@
 import React from 'react'
-import DocumentDetail from './components/DocumentDetails';
+import DocumentDetails from '../components/DocumentDetails';
 
 const DocumentDetail = () => {
   return (
     <div>
-        <DocumentDetail/>
+        <DocumentDetails/>
     </div>
   )
 }

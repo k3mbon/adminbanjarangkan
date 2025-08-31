@@ -1,25 +1,12 @@
 // CarouselImage.jsx
 import { useState } from 'react';
-import { db, storage } from '../firebase';
-import {
-  collection,
-  addDoc,
-  deleteDoc,
-  doc,
-  getDocs,
-} from 'firebase/firestore';
-import {
-  ref,
-  uploadBytesResumable,
-  getDownloadURL,
-  deleteObject,
-} from 'firebase/storage';
+import client, { sanityHelpers, queries } from '../sanity';
 import '../styles/CarouselImage.css';
 import { Button, Form } from 'react-bootstrap';
 
 const CarouselImage = () => {
   const [image, setImage] = useState(null);
-  const [Gambar1, setImageUrl] = useState('');
+  const [imageUrl, setImageUrl] = useState('');
   const [isDeleting, setIsDeleting] = useState(false);
 
   const handleImageChange = (e) => {
@@ -36,22 +23,28 @@ const CarouselImage = () => {
 
   const handleUpload = async () => {
     try {
-      // Upload image to Firebase Storage
-      const storageRef = ref(storage, `images/${image.name}`);
-      const uploadTask = uploadBytesResumable(storageRef, image);
-      await uploadTask;
-
-      // Get the download URL
-      const downloadURL = await getDownloadURL(uploadTask.snapshot.ref);
-
-      // Create a document in Firestore with image details
-      const docRef = await addDoc(collection(db, 'foto_carousel'), {
-        Gambar1: downloadURL,
+      // Upload image to Sanity
+      const imageAsset = await sanityHelpers.uploadAsset(image, {
+        filename: image.name
       });
 
-      console.log('Document written with ID: ', docRef.id);
+      // Create a document in Sanity with image details
+      const carouselImageData = {
+        _type: 'carouselImage',
+        image: {
+          _type: 'image',
+          asset: {
+            _type: 'reference',
+            _ref: imageAsset._id
+          }
+        },
+        createdAt: new Date().toISOString()
+      };
+
+      const docRef = await sanityHelpers.create(carouselImageData);
+      console.log('Dokumen dibuat dengan ID: ', docRef._id);
     } catch (error) {
-      console.error('Error uploading image: ', error);
+      console.error('Error mengunggah gambar: ', error);
     }
   };
 
@@ -59,21 +52,26 @@ const CarouselImage = () => {
     try {
       setIsDeleting(true);
 
-      // Delete the document from Firestore
-      // Note: You might want to store the document ID when creating the document for accurate deletion
-      const querySnapshot = await getDocs(collection(db, 'foto_carousel'));
-      const docToDelete = querySnapshot.docs[0]; // Change this to the correct document reference
-      await deleteDoc(doc(db, 'foto_carousel', docToDelete.id));
-
-      // Delete the image from Firebase Storage
-      const imageRef = ref(storage, `images/${image.name}`);
-      await deleteObject(imageRef);
+      // Get all carousel images from Sanity
+      const carouselImages = await sanityHelpers.fetch(queries.getAllCarouselImages);
+      
+      if (carouselImages.length > 0) {
+        const docToDelete = carouselImages[0]; // Delete the first one, or implement proper selection
+        
+        // Delete the document from Sanity
+        await sanityHelpers.delete(docToDelete._id);
+        
+        // Delete the image asset if it exists
+        if (docToDelete.image?.asset?._ref) {
+          await sanityHelpers.deleteAsset(docToDelete.image.asset._ref);
+        }
+      }
 
       // Reset state
       setImage(null);
       setImageUrl('');
     } catch (error) {
-      console.error('Error deleting image: ', error);
+      console.error('Error menghapus gambar: ', error);
     } finally {
       setIsDeleting(false);
     }
@@ -85,22 +83,22 @@ const CarouselImage = () => {
       <hr className="text-dark" />
       <Form.Group className="my-5">
         <Form.Control type="file" onChange={handleImageChange} />
-        {Gambar1 && (
-          <img src={Gambar1} alt="Preview" style={{ maxWidth: '200px' }} />
+        {imageUrl && (
+          <img src={imageUrl} alt="Pratinjau" style={{ maxWidth: '200px' }} />
         )}
       </Form.Group>
       <Form.Group className="my-5">
         <Button variant="primary" onClick={handleUpload}>
-          Upload
+          Unggah
         </Button>
       </Form.Group>
       <Form.Group className="my-5">
         <Button
           variant="success"
           onClick={handleDelete}
-          disabled={!Gambar1 || isDeleting}
+          disabled={!imageUrl || isDeleting}
         >
-          Delete
+          Hapus
         </Button>
       </Form.Group>
     </Form>
